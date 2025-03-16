@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const dropZone = document.querySelector('.drop-zone');
     const fileInput = document.getElementById('textFileInput');
+    const fileNameDisplay = document.getElementById('file-name');
     const textUploadForm = document.getElementById('textUploadForm');
 
     if (!textUploadForm) {
@@ -27,14 +28,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.dataTransfer.files.length) {
             fileInput.files = e.dataTransfer.files;
             const fileName = fileInput.files[0] ? fileInput.files[0].name : '未选择文件';
-            document.getElementById('file-name').textContent = `已选择文件：${fileName}`;
+            fileNameDisplay.textContent = `已选择文件：${fileName}`;
         }
     });
 
     // 处理文件选择
     fileInput.addEventListener('change', function() {
         const fileName = this.files[0] ? this.files[0].name : '未选择文件';
-        document.getElementById('file-name').textContent = `已选择文件：${fileName}`;
+        fileNameDisplay.textContent = `已选择文件：${fileName}`;
     });
 
     // 处理文本文件上传
@@ -62,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             if (!response.ok) {
-                throw new Error('文件处理失败');
+                throw new Error(`HTTP 错误！状态码：${response.status}`);
             }
 
             const data = await response.json();
@@ -79,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
         } catch (error) {
             console.error('Error:', error);
-            document.getElementById('result').innerText = '处理过程中发生错误';
+            document.getElementById('status').innerText = `生成失败: ${error.message}`;
         } finally {
             progressContainer.style.display = 'none'; // 隐藏进度条
         }
