@@ -1,41 +1,110 @@
-from flask import Flask, request, send_file, jsonify
+from flask import Flask, request, send_file, jsonify, send_from_directory
 from werkzeug.utils import secure_filename
 import os
 from docx import Document
 from fpdf import FPDF
 import pytesseract
 from pydub import AudioSegment
-import speech_recognition as sr
-from pdfminer.high_level import extract_text
-from docx import Document as DocxDocument
-import google.generativeai as genai  # 引入 Google Generative AI 库
 import logging
 import uuid
-import json
-from dotenv import load_dotenv
 from pathlib import Path
-
+from PIL import Image
 from flask_cors import CORS
+import json
+from vosk import Model, KaldiRecognizer
+import wave
+import google.generativeai as genai
+from dotenv import load_dotenv
 
-app = Flask(__name__, static_folder='../frontend', template_folder='../frontend')
-CORS(app)  # 启用 CORS 支持
+# 获取项目根目录的绝对路径
+BASE_DIR = Path(__file__).parent.parent.absolute()
+
+# 加载环境变量
+load_dotenv(BASE_DIR / ".env")  # ✅ 明确指定路径
+
+# --------------------------------------------------
+# 关键：修正 Flask 的静态目录和模板目录
+# --------------------------------------------------
+# 假设你在 backend/static 下放置了 css/ js/ 等静态文件
+# 并且在项目根目录下的 template 文件夹里放了 index.html、404.html 等页面
+app = Flask(
+    __name__,
+    static_folder=str(BASE_DIR / 'backend' / 'static'),   # 指向 backend/static
+    template_folder=str(BASE_DIR / 'template')            # 指向 template
+)
+CORS(app)
+
+# 配置参数
 UPLOAD_FOLDER = 'uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
-logging.basicConfig(level=logging.DEBUG)
+# 在全局范围内初始化模型
+vosk_models = {
+    'en': Model('model/vosk-model-small-en-us-0.15'),
+    'cn': Model('model/vosk-model-small-cn-0.22')
+}
 
-# 添加认证文件路径检查
-credentials_path = Path('backend/gen-lang-client-0067690517-2d914e495b91.json')
-if not credentials_path.exists():
-    raise FileNotFoundError(f"认证文件不存在: {credentials_path}")
+# 初始化Google AI
+genai.configure(api_key="AIzaSyBZJJNl9yAycmVc141ZUc0YHqS84eVoAlc")
+print(genai.GenerativeModel('gemini-1.5-pro').generate_content("测试链接").text)
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = str(credentials_path)
+# 配置日志
+logging.basicConfig(
+    level=logging.DEBUG,
+    format='%(asctime)s %(levelname)s %(message)s',
+    handlers=[
+        logging.FileHandler('app.log'),
+        logging.StreamHandler()
+    ]
+)
+
+@app.route('/')
+def index():
+    # 访问根路径时，直接从 template_folder 返回 index.html
+    return send_from_directory(app.template_folder, 'index.html')
+
+@app.route('/<path:filename>')
+@app.route('/static/<path:filename>')
+def static_proxy(filename):
+    """
+    1. 优先匹配静态资源（backend/static）
+    2. 再匹配 template 文件夹（template/index.html 等）
+    3. 再匹配报告下载
+    4. 最后返回 404
+    """
+    # 优先匹配静态资源
+    static_path = Path(app.static_folder) / filename
+    if static_path.exists():
+        return send_from_directory(app.static_folder, filename)
+    
+    # 匹配模板文件
+    template_path = Path(app.template_folder) / filename
+    if template_path.exists():
+        return send_from_directory(app.template_folder, filename)
+    
+    # 匹配报告下载
+    if filename.startswith('download/'):
+        report_id = filename.split('/')[-1]
+        return send_file(f'reports/{report_id}.docx', as_attachment=True)
+    
+    # 返回404页面
+    return send_from_directory(app.template_folder, '404.html'), 404
+
+def convert_audio(filepath):
+    """将音频文件转换为 Vosk 支持的格式"""
+    try:
+        audio = AudioSegment.from_file(filepath)
+        audio = audio.set_channels(1).set_frame_rate(16000).set_sample_width(2)
+        converted_path = Path(filepath).with_suffix('.wav')
+        audio.export(converted_path, format="wav")
+        return str(converted_path)
+    except Exception as e:
+        logging.error(f"音频转换失败: {str(e)}")
+        raise
 
 def process_image(filepath):
-    """使用 Tesseract OCR 处理图片"""
+    """使用Tesseract OCR处理图片"""
     try:
-        from PIL import Image
-        
         img = Image.open(filepath)
         text = pytesseract.image_to_string(img, lang='chi_sim')
         return text.strip() or "未识别到文字"
@@ -43,143 +112,185 @@ def process_image(filepath):
         logging.error(f"图片处理失败: {str(e)}")
         return ""
 
-def process_audio(filepath):
-    # 将音频转换为文本
-    recognizer = sr.Recognizer()
-    audio = AudioSegment.from_wav(filepath)
-    audio.export("temp.wav", format="wav")
-    with sr.AudioFile("temp.wav") as source:
-        audio_data = recognizer.record(source)
-        text = recognizer.recognize_google(audio_data, language="zh-CN")
-    return text
+def process_audio(filepath, language='en'):
+    """使用Vosk处理音频"""
+    try:
+        filepath = convert_audio(filepath)
+        model = vosk_models.get(language, vosk_models['en'])
+        
+        wf = wave.open(filepath, "rb")
+        if wf.getnchannels() != 1 or wf.getsampwidth() != 2 or wf.getframerate() not in [8000, 16000]:
+            raise ValueError("音频格式不支持，需要单声道16-bit PCM WAV格式，采样率8000或16000Hz")
+        
+        rec = KaldiRecognizer(model, wf.getframerate())
+        result = ""
+        
+        while True:
+            data = wf.readframes(4000)
+            if len(data) == 0:
+                break
+            if rec.AcceptWaveform(data):
+                result += json.loads(rec.Result())["text"]
+        
+        return result.strip() or "No speech recognized"
+    except Exception as e:
+        logging.error(f"音频处理失败: {str(e)}")
+        return ""
 
 def process_text(filepath):
-    # 直接读取文本文件
-    with open(filepath, 'r', encoding='utf-8') as f:
-        return f.read()
+    """处理文本文件"""
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            return f.read()
+    except Exception as e:
+        logging.error(f"文本处理失败: {str(e)}")
+        return ""
 
 def process_pdf(filepath):
-    # 使用 pdfminer 提取文本
-    text = extract_text(filepath)
-    return text
+    """处理PDF文件"""
+    try:
+        from pdfminer.high_level import extract_text
+        return extract_text(filepath)
+    except Exception as e:
+        logging.error(f"PDF处理失败: {str(e)}")
+        return ""
 
 def process_docx(filepath):
-    # 读取 docx 文件内容
-    doc = DocxDocument(filepath)
-    text = '\n'.join([para.text for para in doc.paragraphs])
-    return text
+    """处理Word文档"""
+    try:
+        from docx import Document as DocxDocument
+        doc = DocxDocument(filepath)
+        return '\n'.join([para.text for para in doc.paragraphs])
+    except Exception as e:
+        logging.error(f"Word处理失败: {str(e)}")
+        return ""
 
 def generate_report(data, format='docx', report_id=None):
-    # 生成报告
-    if format == 'docx':
-        doc = Document('backend/templates/template1.docx')  # 使用模板文件
-        # 替换模板中的占位符
-        for paragraph in doc.paragraphs:
-            for key, value in data.items():
-                if f'{{{key}}}' in paragraph.text:
-                    paragraph.text = paragraph.text.replace(f'{{{key}}}', value)
-        report_path = f'reports/{report_id}.docx' if report_id else 'clinical_report.docx'
-        doc.save(report_path)
-    elif format == 'pdf':
-        pdf = FPDF()
-        pdf.add_page()
-        pdf.set_font("Arial", size=12)
-        for key, value in data.items():
-            pdf.cell(200, 10, txt=f"{key}: {value}", ln=True)
-        report_path = f'reports/{report_id}.pdf' if report_id else 'clinical_report.pdf'
-        pdf.output(report_path)
-    return report_path
-
-def call_gemini_model(text):
+    """生成报告"""
     try:
-        model = genai.GenerativeModel('gemini-pro')
-        prompt = f"请根据以下临床笔记生成结构化报告：\n{text}\n\n报告应包括以下字段：\n- 患者姓名 (patient_name)\n- 检查日期 (examination_date)\n- 性别 (sex)\n- 年龄 (age)\n- 参考医生 (refby)\n- UHID 号 (uhidno)\n- 检查类型 (examination_type)\n- 检查区域 (examined_area)\n- 设备型号 (device_model)\n- 影像发现 (imaging_findings)\n- 诊断总结 (diagnosis_summary)\n- 评论 (Comment)"
-        response = model.generate_content(prompt)
-        structured_data = {}
-        for line in response.text.split('\n'):
-            if '：' in line:
-                key, value = line.split('：', 1)
-                structured_data[key.strip()] = value.strip()
-        required_fields = ['patient_name', 'examination_date', 'sex', 'age', 'refby', 'uhidno', 'examination_type', 'examined_area', 'device_model', 'imaging_findings', 'diagnosis_summary', 'Comment']
-        for field in required_fields:
-            if field not in structured_data:
-                structured_data[field] = ''
-        return structured_data
+        if format == 'docx':
+            doc = Document('backend/templates/template1.docx')
+            for paragraph in doc.paragraphs:
+                for key, value in data.items():
+                    placeholder = f"{{{key}}}"
+                    paragraph.text = paragraph.text.replace(placeholder, str(value))
+            
+            report_path = f'reports/{report_id}.docx' if report_id else 'clinical_report.docx'
+            doc.save(report_path)
+            return report_path
+        
+        elif format == 'pdf':
+            pdf = FPDF()
+            pdf.add_page()
+            pdf.set_font("Arial", size=12)
+            for key, value in data.items():
+                pdf.cell(200, 10, txt=f"{key}: {value}", ln=True)
+            
+            report_path = f'reports/{report_id}.pdf' if report_id else 'clinical_report.pdf'
+            pdf.output(report_path)
+            return report_path
+        
     except Exception as e:
-        logging.error(f'Error calling Gemini API: {str(e)}')
-        return None
+        logging.error(f"报告生成失败: {str(e)}")
+        raise
 
-@app.route('/')
-def index():
-    return app.send_static_file('index.html')
-
-@app.route('/<path:filename>')
-def static_files(filename):
-    return app.send_static_file(filename)
+def generate_report_with_ai(text):
+    """使用Google AI生成结构化报告"""
+    try:
+        model = genai.GenerativeModel('gemini-1.5-pro')
+        prompt = f"""请根据以下内容生成结构化报告：
+        {text}
+        
+        报告应包括以下字段：
+        - 患者姓名 (patient_name)
+        - 检查日期 (examination_date)
+        - 性别 (sex)
+        - 年龄 (age)
+        - 诊断结果 (diagnosis)
+        - 建议 (recommendations)
+        - 备注 (notes)"""
+        
+        response = model.generate_content(prompt)
+        
+        if not response or not response.text:
+            raise ValueError("Invalid response from Google AI")
+            
+        # 尝试解析为JSON
+        try:
+            return json.loads(response.text)
+        except json.JSONDecodeError:
+            return {'raw_response': response.text}
+        
+    except Exception as e:
+        logging.error(f"AI生成报告失败: {str(e)}")
+        return {
+            'patient_name': '未知',
+            'examination_date': '未知',
+            'sex': '未知',
+            'age': '未知',
+            'diagnosis': '无法生成诊断结果',
+            'recommendations': ['请检查API密钥'],
+            'notes': 'AI服务不可用'
+        }
 
 @app.route('/process', methods=['POST'])
 def process_file():
-    logging.debug('Received file upload request')
-    if 'file' not in request.files:
-        logging.error('No file uploaded')
-        return jsonify({'error': 'No file uploaded'}), 400
-    
-    file = request.files['file']
-    file_type = request.form.get('type', 'text')
-    
-    if file.filename == '':
-        logging.error('No file selected')
-        return jsonify({'error': 'No file selected'}), 400
-    
-    filename = secure_filename(file.filename)
-    filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
-    file.save(filepath)
-    logging.debug(f'Saved file to {filepath}')
-    
     try:
-        if file_type == 'audio':
-            if filename.endswith('.wav') or filename.endswith('.mp3'):
-                text = process_audio(filepath)
-            else:
-                logging.error('Unsupported audio format')
-                return jsonify({'error': 'Unsupported audio format'}), 400
-        else:
-            if filename.endswith('.jpg') or filename.endswith('.jpeg'):
-                text = process_image(filepath)
-            elif filename.endswith('.pdf'):
-                text = process_pdf(filepath)
-            elif filename.endswith('.docx'):
-                text = process_docx(filepath)
-            elif filename.endswith('.txt'):
-                text = process_text(filepath)
-            else:
-                logging.error('Unsupported file type')
-                return jsonify({'error': 'Unsupported file type'}), 400
+        if 'file' not in request.files:
+            return jsonify({'error': '未上传文件'}), 400
         
-        logging.debug('Calling Google Gemini API')
-        structured_data = call_gemini_model(text)
+        file = request.files['file']
+        if file.filename == '':
+            return jsonify({'error': '无效文件'}), 400
+
+        # 保存文件
+        filename = secure_filename(file.filename)
+        filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+        file.save(filepath)
         
-        # 生成报告 ID
+        # 根据文件类型处理
+        ext = filename.split('.')[-1].lower()
+        processors = {
+            'jpg': process_image,
+            'jpeg': process_image,
+            'png': process_image,
+            'wav': process_audio,
+            'mp3': process_audio,
+            'pdf': process_pdf,
+            'docx': process_docx,
+            'txt': process_text
+        }
+        
+        if ext not in processors:
+            return jsonify({'error': '不支持的文件类型'}), 400
+        
+        text = processors[ext](filepath)
+        
+        # 使用AI生成报告
+        structured_data = generate_report_with_ai(text)
+        if not structured_data:
+            return jsonify({'error': 'AI生成报告失败'}), 500
+        
+        # 生成报告文件
         report_id = str(uuid.uuid4())
-        # 确保 reports 目录存在
         os.makedirs('reports', exist_ok=True)
         report_path = generate_report(structured_data, 'docx', report_id)
         
         return jsonify({
             'reportId': report_id,
-            'downloadUrl': f'/download/{report_id}'  # 修改下载URL格式
+            'downloadUrl': f'/download/{report_id}',
+            'data': structured_data
         }), 200
+        
     except Exception as e:
-        logging.error(f'Error processing file: {str(e)}')
-        return jsonify({'error': f'Error processing file: {str(e)}'}), 500
+        logging.error(f"处理失败: {str(e)}")
+        return jsonify({'error': str(e)}), 500
 
 @app.route('/download/<report_id>', methods=['GET'])
 def download_report(report_id):
     try:
-        # 构建报告文件路径
         report_path = os.path.join('reports', f'{report_id}.docx')
         
-        # 检查文件是否存在
         if not os.path.exists(report_path):
             return jsonify({'error': '报告不存在'}), 404
             
@@ -188,8 +299,31 @@ def download_report(report_id):
         logging.error(f'下载报告失败: {str(e)}')
         return jsonify({'error': f'下载报告失败: {str(e)}'}), 500
 
+@app.errorhandler(404)
+def page_not_found(e):
+    return send_from_directory(app.template_folder, '404.html'), 404
+
 if __name__ == '__main__':
-    # 确保上传目录和报告目录存在
-    os.makedirs(UPLOAD_FOLDER, exist_ok=True)
-    os.makedirs('reports', exist_ok=True)
-    app.run(debug=True) 
+    # 检查必要文件
+    required_files = [
+        BASE_DIR / 'template' / 'index.html',
+        BASE_DIR / 'template' / 'text-upload.html',
+        BASE_DIR / 'template' / 'audio-upload.html',
+        BASE_DIR / 'template' / '404.html'
+    ]
+    
+    for file_path in required_files:
+        if not file_path.exists():
+            logging.critical(f"关键文件缺失: {file_path}")
+            exit(1)
+    
+    for file_path in required_files:
+        if not file_path.exists():
+            logging.critical(f"关键文件缺失: {file_path}")
+            exit(1)
+    
+    # 创建必要目录
+    Path('uploads').mkdir(exist_ok=True)
+    Path('reports').mkdir(exist_ok=True)
+    
+    app.run(host='0.0.0.0', port=5000, debug=True)
