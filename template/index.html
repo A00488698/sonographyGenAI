@@ -2,14 +2,23 @@
 <html>
 <head>
     <title>临床报告生成系统</title>
+    <!-- 
+        将原本的 "../backend/static/css/styles.css" 
+        修改为 "/static/css/styles.css" 
+        这样浏览器请求的路径就是 /static/css/styles.css 
+        Flask 会自动从项目下的 static/css/styles.css 返回文件
+    -->
     <link rel="stylesheet" href="/static/css/styles.css">
+    
+    <!-- 保留 CDN 链接，用于引入 Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="navbar">
+        <!-- 链接指向 Flask 路由，而不是 .html 文件 -->
         <a href="/">首页</a>
-        <a href="template/text-upload.html">上传临床笔记</a>
-        <a href="template/audio-upload.html">上传音频文件</a>
+        <a href="/text-upload">上传临床笔记</a>
+        <a href="/audio-upload">上传音频文件</a>
     </div>
 
     <div class="hero">
@@ -20,16 +29,25 @@
     <div class="features">
         <div class="feature-card">
             <h2>上传临床笔记</h2>
-            <a href="template/text-upload.html" class="submit-btn">开始上传</a>
+            <a href="/text-upload" class="submit-btn">开始上传</a>
         </div>
 
         <div class="feature-card">
             <h2>上传音频文件</h2>
-            <a href="template/audio-upload.html" class="submit-btn">开始上传</a>
+            <a href="/audio-upload" class="submit-btn">开始上传</a>
         </div>
     </div>
 
-    <img src="/static/images/logo.png">
+    <!-- 
+        引用背景图片，路径为 /static/resource/background.png 
+        同样通过 Flask 静态文件路由 /static/ 提供
+    -->
+    <img src="/static/resource/background.png" alt="背景图">
+    
+    <!-- 
+        JS 脚本路径也指向 /static/js/app.js 
+        由 Flask /static 路由提供
+    -->
     <script src="/static/js/app.js"></script>
 </body>
-</html> 
+</html>

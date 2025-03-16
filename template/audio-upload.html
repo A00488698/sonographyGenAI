@@ -2,25 +2,28 @@
 <html>
 <head>
     <title>上传音频文件</title>
+    <!-- 引入全局样式，路径为 /static/css/styles.css -->
     <link rel="stylesheet" href="/static/css/styles.css">
+    <!-- 引入 Font Awesome 图标库 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- 导航栏，链接指向 Flask 路由 -->
     <div class="navbar">
         <a href="/">首页</a>
-        <a href="template/text-upload.html">上传临床笔记</a>
-        <a href="template/audio-upload.html">上传音频文件</a>
+        <a href="/text-upload">上传临床笔记</a>
+        <a href="/audio-upload">上传音频文件</a>
     </div>
 
     <div class="container">
         <h1>上传音频文件</h1>
         <div class="drop-zone">
             <div class="drop-zone-content">
+                <!-- 图标显示：音频文件 -->
                 <i class="fas fa-file-audio"></i>
                 <p>将文件拖放到此处或点击选择文件</p>
-                <label for="audioFileInput" class="file-input-label">
-                    选择文件
-                </label>
+                <label for="audioFileInput" class="file-input-label">选择文件</label>
+                <!-- 文件输入：支持 .wav 和 .mp3 文件 -->
                 <input class="file-input" type="file" id="audioFileInput" accept=".wav,.mp3">
             </div>
             <div id="file-name"></div>
@@ -29,6 +32,7 @@
         <div id="result"></div>
     </div>
 
+    <!-- 引入 JavaScript 脚本，路径为 /static/js/audio-upload.js -->
     <script src="/static/js/audio-upload.js"></script>
 </body>
-</html> 
+</html>

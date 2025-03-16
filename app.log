@@ -286,3 +286,23 @@
 2025-03-16 01:16:24,805 INFO 127.0.0.1 - - [16/Mar/2025 01:16:24] "[33mGET /templates/audio-upload.html HTTP/1.1[0m" 404 -
 2025-03-16 01:17:01,355 INFO 127.0.0.1 - - [16/Mar/2025 01:17:01] "[33mGET /templates/audio-upload.html HTTP/1.1[0m" 404 -
 2025-03-16 01:17:03,763 INFO 127.0.0.1 - - [16/Mar/2025 01:17:03] "[33mGET /templates/text-upload.html HTTP/1.1[0m" 404 -
+2025-03-16 02:04:38,482 WARNING  * Debugger is active!
+2025-03-16 02:04:38,499 INFO  * Debugger PIN: 113-587-870
+2025-03-16 02:04:42,383 ERROR 下载报告失败: [Errno 2] No such file or directory: '/Users/zyx/Documents/TestGen/backend/reports/d42886b1-6adf-47e6-82ab-27f2c50d50c1.docx'
+2025-03-16 02:04:42,384 INFO 127.0.0.1 - - [16/Mar/2025 02:04:42] "[35m[1mGET /download/d42886b1-6adf-47e6-82ab-27f2c50d50c1?format=docx HTTP/1.1[0m" 500 -
+2025-03-16 02:05:04,091 INFO 127.0.0.1 - - [16/Mar/2025 02:05:04] "POST /process HTTP/1.1" 200 -
+2025-03-16 02:05:04,091 INFO 127.0.0.1 - - [16/Mar/2025 02:05:04] "POST /process HTTP/1.1" 200 -
+2025-03-16 02:05:20,439 INFO 127.0.0.1 - - [16/Mar/2025 02:05:20] "[36mGET / HTTP/1.1[0m" 304 -
+2025-03-16 02:05:20,462 INFO 127.0.0.1 - - [16/Mar/2025 02:05:20] "[33mGET /static/js/app.js HTTP/1.1[0m" 404 -
+2025-03-16 02:05:20,476 INFO 127.0.0.1 - - [16/Mar/2025 02:05:20] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 02:05:20,479 INFO 127.0.0.1 - - [16/Mar/2025 02:05:20] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 02:05:21,729 INFO 127.0.0.1 - - [16/Mar/2025 02:05:21] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-16 02:05:21,749 INFO 127.0.0.1 - - [16/Mar/2025 02:05:21] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 02:05:21,749 INFO 127.0.0.1 - - [16/Mar/2025 02:05:21] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-16 02:05:21,797 INFO 127.0.0.1 - - [16/Mar/2025 02:05:21] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 02:05:29,987 INFO 127.0.0.1 - - [16/Mar/2025 02:05:29] "POST /process HTTP/1.1" 200 -
+2025-03-16 02:05:32,260 ERROR 下载报告失败: [Errno 2] No such file or directory: '/Users/zyx/Documents/TestGen/backend/reports/d209c1b1-1460-47f2-8e4a-c91e5ffd0c16.docx'
+2025-03-16 02:05:32,261 INFO 127.0.0.1 - - [16/Mar/2025 02:05:32] "[35m[1mGET /download/d209c1b1-1460-47f2-8e4a-c91e5ffd0c16?format=pdf HTTP/1.1[0m" 500 -
+2025-03-16 02:05:50,436 INFO 127.0.0.1 - - [16/Mar/2025 02:05:50] "POST /process HTTP/1.1" 200 -
+2025-03-16 02:05:53,996 ERROR 下载报告失败: [Errno 2] No such file or directory: '/Users/zyx/Documents/TestGen/backend/reports/0edc4261-fefc-4ca9-8a87-4e1fac6fc10a.docx'
+2025-03-16 02:05:53,997 INFO 127.0.0.1 - - [16/Mar/2025 02:05:53] "[35m[1mGET /download/0edc4261-fefc-4ca9-8a87-4e1fac6fc10a?format=docx HTTP/1.1[0m" 500 -
