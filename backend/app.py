@@ -191,7 +191,7 @@ def generate_report(data, format='docx', report_id=None):
                     paragraph.text = paragraph.text.replace(placeholder, str(value))
             
             # 保存到 TESTGEN/reports/ 下
-            report_path = f'reports/{report_id}.docx' if report_id else 'clinical_report.docx'
+            report_path = os.path.join(str(BASE_DIR / 'reports'), f'{report_id}.docx') if report_id else 'clinical_report.docx'
             doc.save(report_path)
             return report_path
         
@@ -203,7 +203,7 @@ def generate_report(data, format='docx', report_id=None):
             for key, value in data.items():
                 pdf.cell(200, 10, txt=f"{key}: {value}", ln=True)
             
-            report_path = f'reports/{report_id}.pdf' if report_id else 'clinical_report.pdf'
+            report_path = os.path.join(str(BASE_DIR / 'reports'), f'{report_id}.docx') if report_id else 'clinical_report.pdf'
             pdf.output(report_path)
             return report_path
         
@@ -324,14 +324,15 @@ def download_report(report_id):
     根据 report_id 从 TESTGEN/reports/ 下找到对应的 docx 报告文件并返回给客户端下载
     """
     try:
-        report_path = os.path.join('reports', f'{report_id}.docx')
+        # 使用 BASE_DIR 构造绝对路径，确保在项目根目录下查找 reports 文件夹中的文件
+        report_path = os.path.join(str(BASE_DIR / 'reports'), f'{report_id}.docx')
         if not os.path.exists(report_path):
             return jsonify({'error': '报告不存在'}), 404
         return send_file(report_path, as_attachment=True)
     except Exception as e:
         logging.error(f'下载报告失败: {str(e)}')
         return jsonify({'error': f'下载报告失败: {str(e)}'}), 500
-
+    
 # -------------------- 404 错误处理 --------------------
 
 @app.errorhandler(404)

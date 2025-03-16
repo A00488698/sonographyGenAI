@@ -306,3 +306,29 @@
 2025-03-16 02:05:50,436 INFO 127.0.0.1 - - [16/Mar/2025 02:05:50] "POST /process HTTP/1.1" 200 -
 2025-03-16 02:05:53,996 ERROR 下载报告失败: [Errno 2] No such file or directory: '/Users/zyx/Documents/TestGen/backend/reports/0edc4261-fefc-4ca9-8a87-4e1fac6fc10a.docx'
 2025-03-16 02:05:53,997 INFO 127.0.0.1 - - [16/Mar/2025 02:05:53] "[35m[1mGET /download/0edc4261-fefc-4ca9-8a87-4e1fac6fc10a?format=docx HTTP/1.1[0m" 500 -
+2025-03-16 02:08:54,091 INFO 127.0.0.1 - - [16/Mar/2025 02:08:54] "POST /process HTTP/1.1" 200 -
+2025-03-16 02:09:10,325 ERROR 下载报告失败: [Errno 2] No such file or directory: '/Users/zyx/Documents/TestGen/backend/reports/2f16f7af-4812-47ac-b9ff-a398c8f6c778.docx'
+2025-03-16 02:09:10,325 INFO 127.0.0.1 - - [16/Mar/2025 02:09:10] "[35m[1mGET /download/2f16f7af-4812-47ac-b9ff-a398c8f6c778?format=docx HTTP/1.1[0m" 500 -
+2025-03-16 02:11:16,177 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/app.py', reloading
+2025-03-16 02:11:20,320 WARNING  * Debugger is active!
+2025-03-16 02:11:20,344 INFO  * Debugger PIN: 113-587-870
+2025-03-16 02:11:41,904 INFO 127.0.0.1 - - [16/Mar/2025 02:11:41] "POST /process HTTP/1.1" 200 -
+2025-03-16 02:11:43,313 ERROR 下载报告失败: [Errno 2] No such file or directory: '/Users/zyx/Documents/TestGen/backend/reports/9ab55804-5544-4d9b-82d9-eaa616b90357.docx'
+2025-03-16 02:11:43,314 INFO 127.0.0.1 - - [16/Mar/2025 02:11:43] "[35m[1mGET /download/9ab55804-5544-4d9b-82d9-eaa616b90357?format=docx HTTP/1.1[0m" 500 -
+2025-03-16 02:11:47,866 ERROR 下载报告失败: [Errno 2] No such file or directory: '/Users/zyx/Documents/TestGen/backend/reports/9ab55804-5544-4d9b-82d9-eaa616b90357.docx'
+2025-03-16 02:11:47,867 INFO 127.0.0.1 - - [16/Mar/2025 02:11:47] "[35m[1mGET /download/9ab55804-5544-4d9b-82d9-eaa616b90357?format=docx HTTP/1.1[0m" 500 -
+2025-03-16 02:13:39,864 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/app.py', reloading
+2025-03-16 02:13:43,307 WARNING  * Debugger is active!
+2025-03-16 02:13:43,330 INFO  * Debugger PIN: 113-587-870
+2025-03-16 02:13:46,367 INFO 127.0.0.1 - - [16/Mar/2025 02:13:46] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-16 02:13:46,397 INFO 127.0.0.1 - - [16/Mar/2025 02:13:46] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-16 02:13:46,397 INFO 127.0.0.1 - - [16/Mar/2025 02:13:46] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 02:13:46,455 INFO 127.0.0.1 - - [16/Mar/2025 02:13:46] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 02:13:55,543 INFO 127.0.0.1 - - [16/Mar/2025 02:13:55] "POST /process HTTP/1.1" 200 -
+2025-03-16 02:13:56,671 INFO 127.0.0.1 - - [16/Mar/2025 02:13:56] "GET /download/f0bc0b75-02a2-4da8-ab77-1946d6480335?format=docx HTTP/1.1" 200 -
+2025-03-16 02:13:56,689 INFO 127.0.0.1 - - [16/Mar/2025 02:13:56] "GET /download/f0bc0b75-02a2-4da8-ab77-1946d6480335?format=docx HTTP/1.1" 200 -
+2025-03-16 02:13:56,715 INFO 127.0.0.1 - - [16/Mar/2025 02:13:56] "[35m[1mHEAD /download/f0bc0b75-02a2-4da8-ab77-1946d6480335?format=docx HTTP/1.1[0m" 206 -
+2025-03-16 02:14:15,940 INFO 127.0.0.1 - - [16/Mar/2025 02:14:15] "GET /audio-upload HTTP/1.1" 200 -
+2025-03-16 02:14:15,980 INFO 127.0.0.1 - - [16/Mar/2025 02:14:15] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 02:14:15,998 INFO 127.0.0.1 - - [16/Mar/2025 02:14:15] "[36mGET /static/js/audio-upload.js HTTP/1.1[0m" 304 -
+2025-03-16 02:14:16,033 INFO 127.0.0.1 - - [16/Mar/2025 02:14:16] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
