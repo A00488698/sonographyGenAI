@@ -12,8 +12,7 @@ docxtpl==0.16.4
 docx2pdf==0.1.7
 
 # AI 相关依赖
-transformers==4.33.2
-torch==2.0.1
+ollama==0.1.0  # Ollama for Llama2 integration
 
 # 其他工具
 uuid==1.30
