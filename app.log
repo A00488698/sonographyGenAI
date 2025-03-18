@@ -1238,3 +1238,609 @@
 2025-03-18 15:29:00,679 INFO 127.0.0.1 - - [18/Mar/2025 15:29:00] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
 2025-03-18 15:29:00,684 INFO 127.0.0.1 - - [18/Mar/2025 15:29:00] "[33mGET /static/js/app.js HTTP/1.1[0m" 404 -
 2025-03-18 15:29:00,717 INFO 127.0.0.1 - - [18/Mar/2025 15:29:00] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-18 15:32:18,391 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/text_processing.py', reloading
+2025-03-18 15:32:18,504 INFO  * Restarting with stat
+2025-03-18 15:32:19,274 WARNING  * Debugger is active!
+2025-03-18 15:32:19,283 INFO  * Debugger PIN: 113-587-870
+2025-03-18 15:32:29,575 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/text_processing.py', reloading
+2025-03-18 15:32:29,682 INFO  * Restarting with stat
+2025-03-18 15:32:30,247 WARNING  * Debugger is active!
+2025-03-18 15:32:30,252 INFO  * Debugger PIN: 113-587-870
+2025-03-18 15:32:40,596 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/ai_processing.py', reloading
+2025-03-18 15:32:40,667 INFO  * Restarting with stat
+2025-03-18 15:32:41,224 WARNING  * Debugger is active!
+2025-03-18 15:32:41,230 INFO  * Debugger PIN: 113-587-870
+2025-03-18 15:33:35,647 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/report_generation.py', reloading
+2025-03-18 15:33:35,723 INFO  * Restarting with stat
+2025-03-18 15:33:36,393 WARNING  * Debugger is active!
+2025-03-18 15:33:36,399 INFO  * Debugger PIN: 113-587-870
+2025-03-18 15:35:25,427 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/app2.py', reloading
+2025-03-18 15:35:25,496 INFO  * Restarting with stat
+2025-03-18 15:35:26,078 WARNING  * Debugger is active!
+2025-03-18 15:35:26,084 INFO  * Debugger PIN: 113-587-870
+2025-03-18 15:36:35,252 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/report_generation.py', reloading
+2025-03-18 15:36:35,327 INFO  * Restarting with stat
+2025-03-18 15:36:35,916 WARNING  * Debugger is active!
+2025-03-18 15:36:35,922 INFO  * Debugger PIN: 113-587-870
+2025-03-18 15:36:36,960 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/report_generation.py', reloading
+2025-03-18 15:36:37,057 INFO  * Restarting with stat
+2025-03-18 15:36:37,620 WARNING  * Debugger is active!
+2025-03-18 15:36:37,625 INFO  * Debugger PIN: 113-587-870
+2025-03-18 15:37:51,910 INFO 127.0.0.1 - - [18/Mar/2025 15:37:51] "[36mGET / HTTP/1.1[0m" 304 -
+2025-03-18 15:37:51,957 INFO 127.0.0.1 - - [18/Mar/2025 15:37:51] "[33mGET /static/js/app.js HTTP/1.1[0m" 404 -
+2025-03-18 15:37:51,960 INFO 127.0.0.1 - - [18/Mar/2025 15:37:51] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 15:37:52,065 INFO 127.0.0.1 - - [18/Mar/2025 15:37:52] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-18 15:37:53,924 INFO 127.0.0.1 - - [18/Mar/2025 15:37:53] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-18 15:37:53,944 INFO 127.0.0.1 - - [18/Mar/2025 15:37:53] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 15:37:53,944 INFO 127.0.0.1 - - [18/Mar/2025 15:37:53] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-18 15:37:54,001 INFO 127.0.0.1 - - [18/Mar/2025 15:37:54] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-18 15:37:57,693 DEBUG connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-03-18 15:37:57,693 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x115ce4440>
+2025-03-18 15:37:57,694 DEBUG send_request_headers.started request=<Request [b'POST']>
+2025-03-18 15:37:57,694 DEBUG send_request_headers.complete
+2025-03-18 15:37:57,694 DEBUG send_request_body.started request=<Request [b'POST']>
+2025-03-18 15:37:57,694 DEBUG send_request_body.complete
+2025-03-18 15:37:57,694 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2025-03-18 15:38:12,455 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Tue, 18 Mar 2025 18:38:12 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-03-18 15:38:12,456 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-18 15:38:12,456 DEBUG receive_response_body.started request=<Request [b'POST']>
+2025-03-18 15:38:12,456 DEBUG receive_response_body.complete
+2025-03-18 15:38:12,456 DEBUG response_closed.started
+2025-03-18 15:38:12,456 DEBUG response_closed.complete
+2025-03-18 15:40:03,132 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/report_generation.py', reloading
+2025-03-18 15:40:03,246 INFO  * Restarting with stat
+2025-03-18 15:40:04,018 WARNING  * Debugger is active!
+2025-03-18 15:40:04,025 INFO  * Debugger PIN: 113-587-870
+2025-03-18 15:40:11,999 DEBUG connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-03-18 15:40:12,000 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x1267c8590>
+2025-03-18 15:40:12,000 DEBUG send_request_headers.started request=<Request [b'POST']>
+2025-03-18 15:40:12,001 DEBUG send_request_headers.complete
+2025-03-18 15:40:12,001 DEBUG send_request_body.started request=<Request [b'POST']>
+2025-03-18 15:40:12,001 DEBUG send_request_body.complete
+2025-03-18 15:40:12,002 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2025-03-18 15:40:21,432 DEBUG connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-03-18 15:40:21,432 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x1267c4cd0>
+2025-03-18 15:40:21,432 DEBUG send_request_headers.started request=<Request [b'POST']>
+2025-03-18 15:40:21,432 DEBUG send_request_headers.complete
+2025-03-18 15:40:21,432 DEBUG send_request_body.started request=<Request [b'POST']>
+2025-03-18 15:40:21,432 DEBUG send_request_body.complete
+2025-03-18 15:40:21,432 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2025-03-18 15:40:30,605 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/report_generation.py', reloading
+2025-03-18 15:40:30,706 INFO  * Restarting with stat
+2025-03-18 15:40:31,837 WARNING  * Debugger is active!
+2025-03-18 15:40:31,843 INFO  * Debugger PIN: 113-587-870
+2025-03-18 15:40:33,852 DEBUG connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-03-18 15:40:33,853 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x1234a8590>
+2025-03-18 15:40:33,853 DEBUG send_request_headers.started request=<Request [b'POST']>
+2025-03-18 15:40:33,854 DEBUG send_request_headers.complete
+2025-03-18 15:40:33,854 DEBUG send_request_body.started request=<Request [b'POST']>
+2025-03-18 15:40:33,854 DEBUG send_request_body.complete
+2025-03-18 15:40:33,854 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2025-03-18 15:40:34,889 INFO 127.0.0.1 - - [18/Mar/2025 15:40:34] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-18 15:40:34,912 INFO 127.0.0.1 - - [18/Mar/2025 15:40:34] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 15:40:34,912 INFO 127.0.0.1 - - [18/Mar/2025 15:40:34] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-18 15:40:34,974 INFO 127.0.0.1 - - [18/Mar/2025 15:40:34] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-18 15:40:38,972 DEBUG connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-03-18 15:40:38,972 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x1234d8f50>
+2025-03-18 15:40:38,973 DEBUG send_request_headers.started request=<Request [b'POST']>
+2025-03-18 15:40:38,973 DEBUG send_request_headers.complete
+2025-03-18 15:40:38,973 DEBUG send_request_body.started request=<Request [b'POST']>
+2025-03-18 15:40:38,973 DEBUG send_request_body.complete
+2025-03-18 15:40:38,973 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2025-03-18 15:40:47,900 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Tue, 18 Mar 2025 18:40:47 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-03-18 15:40:47,900 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-18 15:40:47,900 DEBUG receive_response_body.started request=<Request [b'POST']>
+2025-03-18 15:40:47,900 DEBUG receive_response_body.complete
+2025-03-18 15:40:47,900 DEBUG response_closed.started
+2025-03-18 15:40:47,900 DEBUG response_closed.complete
+2025-03-18 15:40:49,197 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Tue, 18 Mar 2025 18:40:49 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-03-18 15:40:49,198 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-18 15:40:49,198 DEBUG receive_response_body.started request=<Request [b'POST']>
+2025-03-18 15:40:49,198 DEBUG receive_response_body.complete
+2025-03-18 15:40:49,198 DEBUG response_closed.started
+2025-03-18 15:40:49,198 DEBUG response_closed.complete
+2025-03-18 15:41:13,070 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/report_generation.py', reloading
+2025-03-18 15:41:13,216 INFO  * Restarting with stat
+2025-03-18 15:41:14,086 WARNING  * Debugger is active!
+2025-03-18 15:41:14,095 INFO  * Debugger PIN: 113-587-870
+2025-03-18 15:41:19,391 DEBUG connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-03-18 15:41:19,391 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x12beec590>
+2025-03-18 15:41:19,392 DEBUG send_request_headers.started request=<Request [b'POST']>
+2025-03-18 15:41:19,392 DEBUG send_request_headers.complete
+2025-03-18 15:41:19,392 DEBUG send_request_body.started request=<Request [b'POST']>
+2025-03-18 15:41:19,392 DEBUG send_request_body.complete
+2025-03-18 15:41:19,392 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2025-03-18 15:41:23,375 INFO 127.0.0.1 - - [18/Mar/2025 15:41:23] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-18 15:41:23,402 INFO 127.0.0.1 - - [18/Mar/2025 15:41:23] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 15:41:23,405 INFO 127.0.0.1 - - [18/Mar/2025 15:41:23] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-18 15:41:23,459 INFO 127.0.0.1 - - [18/Mar/2025 15:41:23] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-18 15:41:28,389 DEBUG connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-03-18 15:41:28,389 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x12bedcf50>
+2025-03-18 15:41:28,390 DEBUG send_request_headers.started request=<Request [b'POST']>
+2025-03-18 15:41:28,390 DEBUG send_request_headers.complete
+2025-03-18 15:41:28,390 DEBUG send_request_body.started request=<Request [b'POST']>
+2025-03-18 15:41:28,390 DEBUG send_request_body.complete
+2025-03-18 15:41:28,390 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2025-03-18 15:41:39,796 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Tue, 18 Mar 2025 18:41:39 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-03-18 15:41:39,797 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-18 15:41:39,797 DEBUG receive_response_body.started request=<Request [b'POST']>
+2025-03-18 15:41:39,797 DEBUG receive_response_body.complete
+2025-03-18 15:41:39,797 DEBUG response_closed.started
+2025-03-18 15:41:39,797 DEBUG response_closed.complete
+2025-03-18 15:41:42,503 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Tue, 18 Mar 2025 18:41:42 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-03-18 15:41:42,504 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-18 15:41:42,504 DEBUG receive_response_body.started request=<Request [b'POST']>
+2025-03-18 15:41:42,504 DEBUG receive_response_body.complete
+2025-03-18 15:41:42,504 DEBUG response_closed.started
+2025-03-18 15:41:42,504 DEBUG response_closed.complete
+2025-03-18 15:41:44,799 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/report_generation.py', reloading
+2025-03-18 15:41:44,925 INFO  * Restarting with stat
+2025-03-18 15:41:45,727 WARNING  * Debugger is active!
+2025-03-18 15:41:45,734 INFO  * Debugger PIN: 113-587-870
+2025-03-18 15:41:52,173 DEBUG connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-03-18 15:41:52,174 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x1071c0590>
+2025-03-18 15:41:52,174 DEBUG send_request_headers.started request=<Request [b'POST']>
+2025-03-18 15:41:52,175 DEBUG send_request_headers.complete
+2025-03-18 15:41:52,175 DEBUG send_request_body.started request=<Request [b'POST']>
+2025-03-18 15:41:52,175 DEBUG send_request_body.complete
+2025-03-18 15:41:52,175 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2025-03-18 15:42:03,668 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Tue, 18 Mar 2025 18:42:03 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-03-18 15:42:03,669 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-18 15:42:03,669 DEBUG receive_response_body.started request=<Request [b'POST']>
+2025-03-18 15:42:03,669 DEBUG receive_response_body.complete
+2025-03-18 15:42:03,669 DEBUG response_closed.started
+2025-03-18 15:42:03,669 DEBUG response_closed.complete
+2025-03-18 15:42:47,422 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/report_generation.py', reloading
+2025-03-18 15:42:47,541 INFO  * Restarting with stat
+2025-03-18 15:42:48,304 WARNING  * Debugger is active!
+2025-03-18 15:42:48,311 INFO  * Debugger PIN: 113-587-870
+2025-03-18 15:42:49,357 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/report_generation.py', reloading
+2025-03-18 15:42:49,474 INFO  * Restarting with stat
+2025-03-18 15:42:50,035 WARNING  * Debugger is active!
+2025-03-18 15:42:50,040 INFO  * Debugger PIN: 113-587-870
+2025-03-18 15:42:54,773 INFO 127.0.0.1 - - [18/Mar/2025 15:42:54] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-18 15:42:54,812 INFO 127.0.0.1 - - [18/Mar/2025 15:42:54] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 15:42:54,812 INFO 127.0.0.1 - - [18/Mar/2025 15:42:54] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-18 15:42:54,857 INFO 127.0.0.1 - - [18/Mar/2025 15:42:54] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-18 15:42:58,293 DEBUG connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-03-18 15:42:58,293 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x106d7c440>
+2025-03-18 15:42:58,294 DEBUG send_request_headers.started request=<Request [b'POST']>
+2025-03-18 15:42:58,294 DEBUG send_request_headers.complete
+2025-03-18 15:42:58,294 DEBUG send_request_body.started request=<Request [b'POST']>
+2025-03-18 15:42:58,294 DEBUG send_request_body.complete
+2025-03-18 15:42:58,294 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2025-03-18 15:43:14,516 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Tue, 18 Mar 2025 18:43:14 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-03-18 15:43:14,517 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-18 15:43:14,518 DEBUG receive_response_body.started request=<Request [b'POST']>
+2025-03-18 15:43:14,518 DEBUG receive_response_body.complete
+2025-03-18 15:43:14,518 DEBUG response_closed.started
+2025-03-18 15:43:14,518 DEBUG response_closed.complete
+2025-03-18 15:45:06,217 DEBUG close.started
+2025-03-18 15:45:06,218 DEBUG close.complete
+2025-03-18 15:45:06,218 DEBUG connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-03-18 15:45:06,220 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x106e2e5d0>
+2025-03-18 15:45:06,220 DEBUG send_request_headers.started request=<Request [b'POST']>
+2025-03-18 15:45:06,221 DEBUG send_request_headers.complete
+2025-03-18 15:45:06,221 DEBUG send_request_body.started request=<Request [b'POST']>
+2025-03-18 15:45:06,221 DEBUG send_request_body.complete
+2025-03-18 15:45:06,221 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2025-03-18 15:45:22,476 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Tue, 18 Mar 2025 18:45:22 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-03-18 15:45:22,478 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-18 15:45:22,478 DEBUG receive_response_body.started request=<Request [b'POST']>
+2025-03-18 15:45:22,478 DEBUG receive_response_body.complete
+2025-03-18 15:45:22,479 DEBUG response_closed.started
+2025-03-18 15:45:22,479 DEBUG response_closed.complete
+2025-03-18 15:45:23,584 INFO 127.0.0.1 - - [18/Mar/2025 15:45:23] "POST /process HTTP/1.1" 200 -
+2025-03-18 15:45:27,596 INFO 127.0.0.1 - - [18/Mar/2025 15:45:27] "GET /download/5869c901-29a7-47b4-b04c-f6ab34bb0c03?format=docx HTTP/1.1" 200 -
+2025-03-18 15:45:27,624 INFO 127.0.0.1 - - [18/Mar/2025 15:45:27] "GET /download/5869c901-29a7-47b4-b04c-f6ab34bb0c03?format=docx HTTP/1.1" 200 -
+2025-03-18 15:45:27,647 INFO 127.0.0.1 - - [18/Mar/2025 15:45:27] "[35m[1mHEAD /download/5869c901-29a7-47b4-b04c-f6ab34bb0c03?format=docx HTTP/1.1[0m" 206 -
+2025-03-18 15:45:36,965 INFO 127.0.0.1 - - [18/Mar/2025 15:45:36] "GET /download/5869c901-29a7-47b4-b04c-f6ab34bb0c03?format=pdf HTTP/1.1" 200 -
+2025-03-18 15:45:36,988 INFO 127.0.0.1 - - [18/Mar/2025 15:45:36] "GET /download/5869c901-29a7-47b4-b04c-f6ab34bb0c03?format=pdf HTTP/1.1" 200 -
+2025-03-18 15:45:37,007 INFO 127.0.0.1 - - [18/Mar/2025 15:45:37] "[35m[1mHEAD /download/5869c901-29a7-47b4-b04c-f6ab34bb0c03?format=pdf HTTP/1.1[0m" 206 -
+2025-03-18 15:47:02,242 DEBUG close.started
+2025-03-18 15:47:02,242 DEBUG close.complete
+2025-03-18 15:47:02,242 DEBUG connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-03-18 15:47:02,243 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x106e2fed0>
+2025-03-18 15:47:02,244 DEBUG send_request_headers.started request=<Request [b'POST']>
+2025-03-18 15:47:02,244 DEBUG send_request_headers.complete
+2025-03-18 15:47:02,244 DEBUG send_request_body.started request=<Request [b'POST']>
+2025-03-18 15:47:02,244 DEBUG send_request_body.complete
+2025-03-18 15:47:02,245 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2025-03-18 15:47:17,435 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Tue, 18 Mar 2025 18:47:17 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-03-18 15:47:17,436 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-18 15:47:17,436 DEBUG receive_response_body.started request=<Request [b'POST']>
+2025-03-18 15:47:17,436 DEBUG receive_response_body.complete
+2025-03-18 15:47:17,436 DEBUG response_closed.started
+2025-03-18 15:47:17,436 DEBUG response_closed.complete
+2025-03-18 15:47:30,400 INFO 127.0.0.1 - - [18/Mar/2025 15:47:30] "POST /process HTTP/1.1" 200 -
+2025-03-18 15:50:19,511 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/report_generation.py', reloading
+2025-03-18 15:50:19,591 INFO  * Restarting with stat
+2025-03-18 15:50:20,385 WARNING  * Debugger is active!
+2025-03-18 15:50:20,393 INFO  * Debugger PIN: 113-587-870
+2025-03-18 15:50:25,790 DEBUG tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-03-18 15:50:25,790 DEBUG tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 86 - value: b'\x00\x00\x00H\x00\x00\x00\x01'
+2025-03-18 15:50:25,790 DEBUG tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 94 - value: b'\x00\x00\x00H\x00\x00\x00\x01'
+2025-03-18 15:50:25,790 DEBUG tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-03-18 15:50:25,790 DEBUG tag: YCbCrPositioning (531) - type: short (3) - value: b'\x00\x01'
+2025-03-18 15:50:25,790 DEBUG tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00f'
+2025-03-18 15:50:25,806 DEBUG ['tesseract', '/var/folders/bx/5my6659x077b28kz2qwk1blc0000gn/T/tess_mdgm4yal_input.JPEG', '/var/folders/bx/5my6659x077b28kz2qwk1blc0000gn/T/tess_mdgm4yal', '-l', 'eng', 'txt']
+2025-03-18 15:50:26,521 DEBUG connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-03-18 15:50:26,521 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x105391e80>
+2025-03-18 15:50:26,521 DEBUG send_request_headers.started request=<Request [b'POST']>
+2025-03-18 15:50:26,521 DEBUG send_request_headers.complete
+2025-03-18 15:50:26,521 DEBUG send_request_body.started request=<Request [b'POST']>
+2025-03-18 15:50:26,521 DEBUG send_request_body.complete
+2025-03-18 15:50:26,521 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2025-03-18 15:50:43,403 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Tue, 18 Mar 2025 18:50:43 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-03-18 15:50:43,403 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-18 15:50:43,403 DEBUG receive_response_body.started request=<Request [b'POST']>
+2025-03-18 15:50:43,404 DEBUG receive_response_body.complete
+2025-03-18 15:50:43,404 DEBUG response_closed.started
+2025-03-18 15:50:43,404 DEBUG response_closed.complete
+2025-03-18 15:50:51,053 INFO 127.0.0.1 - - [18/Mar/2025 15:50:51] "POST /process HTTP/1.1" 200 -
+2025-03-18 15:50:54,590 INFO 127.0.0.1 - - [18/Mar/2025 15:50:54] "GET /download/196669c1-b79e-4bf7-ad11-dfa16d16566f?format=docx HTTP/1.1" 200 -
+2025-03-18 15:50:54,600 INFO 127.0.0.1 - - [18/Mar/2025 15:50:54] "GET /download/196669c1-b79e-4bf7-ad11-dfa16d16566f?format=docx HTTP/1.1" 200 -
+2025-03-18 15:50:54,613 INFO 127.0.0.1 - - [18/Mar/2025 15:50:54] "[35m[1mHEAD /download/196669c1-b79e-4bf7-ad11-dfa16d16566f?format=docx HTTP/1.1[0m" 206 -
+2025-03-18 15:50:59,333 INFO 127.0.0.1 - - [18/Mar/2025 15:50:59] "GET /download/196669c1-b79e-4bf7-ad11-dfa16d16566f?format=docx HTTP/1.1" 200 -
+2025-03-18 15:50:59,342 INFO 127.0.0.1 - - [18/Mar/2025 15:50:59] "GET /download/196669c1-b79e-4bf7-ad11-dfa16d16566f?format=docx HTTP/1.1" 200 -
+2025-03-18 15:50:59,352 INFO 127.0.0.1 - - [18/Mar/2025 15:50:59] "[35m[1mHEAD /download/196669c1-b79e-4bf7-ad11-dfa16d16566f?format=docx HTTP/1.1[0m" 206 -
+2025-03-18 15:57:33,978 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/report_generation.py', reloading
+2025-03-18 15:57:34,115 INFO  * Restarting with stat
+2025-03-18 15:57:34,883 WARNING  * Debugger is active!
+2025-03-18 15:57:34,891 INFO  * Debugger PIN: 113-587-870
+2025-03-18 15:57:35,959 INFO 127.0.0.1 - - [18/Mar/2025 15:57:35] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-18 15:57:35,995 INFO 127.0.0.1 - - [18/Mar/2025 15:57:35] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-18 15:57:35,995 INFO 127.0.0.1 - - [18/Mar/2025 15:57:35] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 15:57:36,058 INFO 127.0.0.1 - - [18/Mar/2025 15:57:36] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-18 15:57:44,851 DEBUG tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-03-18 15:57:44,851 DEBUG tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 86 - value: b'\x00\x00\x00H\x00\x00\x00\x01'
+2025-03-18 15:57:44,851 DEBUG tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 94 - value: b'\x00\x00\x00H\x00\x00\x00\x01'
+2025-03-18 15:57:44,851 DEBUG tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-03-18 15:57:44,851 DEBUG tag: YCbCrPositioning (531) - type: short (3) - value: b'\x00\x01'
+2025-03-18 15:57:44,851 DEBUG tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00f'
+2025-03-18 15:57:44,861 DEBUG ['tesseract', '/var/folders/bx/5my6659x077b28kz2qwk1blc0000gn/T/tess_4pf_5s5p_input.JPEG', '/var/folders/bx/5my6659x077b28kz2qwk1blc0000gn/T/tess_4pf_5s5p', '-l', 'eng', 'txt']
+2025-03-18 15:57:45,368 DEBUG connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-03-18 15:57:45,368 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x10fc31d30>
+2025-03-18 15:57:45,368 DEBUG send_request_headers.started request=<Request [b'POST']>
+2025-03-18 15:57:45,369 DEBUG send_request_headers.complete
+2025-03-18 15:57:45,369 DEBUG send_request_body.started request=<Request [b'POST']>
+2025-03-18 15:57:45,369 DEBUG send_request_body.complete
+2025-03-18 15:57:45,369 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2025-03-18 15:58:01,089 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Tue, 18 Mar 2025 18:58:01 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-03-18 15:58:01,090 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-18 15:58:01,090 DEBUG receive_response_body.started request=<Request [b'POST']>
+2025-03-18 15:58:01,090 DEBUG receive_response_body.complete
+2025-03-18 15:58:01,090 DEBUG response_closed.started
+2025-03-18 15:58:01,090 DEBUG response_closed.complete
+2025-03-18 15:58:06,111 INFO 127.0.0.1 - - [18/Mar/2025 15:58:06] "POST /process HTTP/1.1" 200 -
+2025-03-18 15:58:07,907 INFO 127.0.0.1 - - [18/Mar/2025 15:58:07] "GET /download/67b4b64a-81c8-44d1-a0f6-be815b1b65c7?format=docx HTTP/1.1" 200 -
+2025-03-18 15:58:07,928 INFO 127.0.0.1 - - [18/Mar/2025 15:58:07] "GET /download/67b4b64a-81c8-44d1-a0f6-be815b1b65c7?format=docx HTTP/1.1" 200 -
+2025-03-18 15:58:07,949 INFO 127.0.0.1 - - [18/Mar/2025 15:58:07] "[35m[1mHEAD /download/67b4b64a-81c8-44d1-a0f6-be815b1b65c7?format=docx HTTP/1.1[0m" 206 -
+2025-03-18 16:00:24,524 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/report_generation.py', reloading
+2025-03-18 16:00:24,612 INFO  * Restarting with stat
+2025-03-18 16:00:25,354 WARNING  * Debugger is active!
+2025-03-18 16:00:25,361 INFO  * Debugger PIN: 113-587-870
+2025-03-18 16:00:26,693 INFO 127.0.0.1 - - [18/Mar/2025 16:00:26] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-18 16:00:26,717 INFO 127.0.0.1 - - [18/Mar/2025 16:00:26] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 16:00:26,717 INFO 127.0.0.1 - - [18/Mar/2025 16:00:26] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-18 16:00:26,771 INFO 127.0.0.1 - - [18/Mar/2025 16:00:26] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-18 16:00:32,403 DEBUG tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-03-18 16:00:32,403 DEBUG tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 86 - value: b'\x00\x00\x00H\x00\x00\x00\x01'
+2025-03-18 16:00:32,403 DEBUG tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 94 - value: b'\x00\x00\x00H\x00\x00\x00\x01'
+2025-03-18 16:00:32,403 DEBUG tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-03-18 16:00:32,403 DEBUG tag: YCbCrPositioning (531) - type: short (3) - value: b'\x00\x01'
+2025-03-18 16:00:32,403 DEBUG tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00f'
+2025-03-18 16:00:32,416 DEBUG ['tesseract', '/var/folders/bx/5my6659x077b28kz2qwk1blc0000gn/T/tess_cfuzp3mg_input.JPEG', '/var/folders/bx/5my6659x077b28kz2qwk1blc0000gn/T/tess_cfuzp3mg', '-l', 'eng', 'txt']
+2025-03-18 16:00:33,031 DEBUG connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-03-18 16:00:33,032 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x113ee5d30>
+2025-03-18 16:00:33,032 DEBUG send_request_headers.started request=<Request [b'POST']>
+2025-03-18 16:00:33,032 DEBUG send_request_headers.complete
+2025-03-18 16:00:33,032 DEBUG send_request_body.started request=<Request [b'POST']>
+2025-03-18 16:00:33,032 DEBUG send_request_body.complete
+2025-03-18 16:00:33,032 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2025-03-18 16:00:50,106 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Tue, 18 Mar 2025 19:00:50 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-03-18 16:00:50,107 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-18 16:00:50,107 DEBUG receive_response_body.started request=<Request [b'POST']>
+2025-03-18 16:00:50,107 DEBUG receive_response_body.complete
+2025-03-18 16:00:50,107 DEBUG response_closed.started
+2025-03-18 16:00:50,107 DEBUG response_closed.complete
+2025-03-18 16:00:55,774 INFO 127.0.0.1 - - [18/Mar/2025 16:00:55] "POST /process HTTP/1.1" 200 -
+2025-03-18 16:00:58,773 INFO 127.0.0.1 - - [18/Mar/2025 16:00:58] "GET /download/a0e1ae20-9fbf-43ec-9019-b1c1bfb869a6?format=docx HTTP/1.1" 200 -
+2025-03-18 16:00:58,794 INFO 127.0.0.1 - - [18/Mar/2025 16:00:58] "GET /download/a0e1ae20-9fbf-43ec-9019-b1c1bfb869a6?format=docx HTTP/1.1" 200 -
+2025-03-18 16:00:58,805 INFO 127.0.0.1 - - [18/Mar/2025 16:00:58] "[35m[1mHEAD /download/a0e1ae20-9fbf-43ec-9019-b1c1bfb869a6?format=docx HTTP/1.1[0m" 206 -
+2025-03-18 16:02:24,355 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/ai_processing.py', reloading
+2025-03-18 16:02:24,493 INFO  * Restarting with stat
+2025-03-18 16:02:25,253 WARNING  * Debugger is active!
+2025-03-18 16:02:25,261 INFO  * Debugger PIN: 113-587-870
+2025-03-18 16:05:55,490 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/ai_processing.py', reloading
+2025-03-18 16:05:55,597 INFO  * Restarting with stat
+2025-03-18 16:05:56,365 WARNING  * Debugger is active!
+2025-03-18 16:05:56,371 INFO  * Debugger PIN: 113-587-870
+2025-03-18 16:06:04,985 DEBUG tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-03-18 16:06:04,985 DEBUG tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 86 - value: b'\x00\x00\x00H\x00\x00\x00\x01'
+2025-03-18 16:06:04,985 DEBUG tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 94 - value: b'\x00\x00\x00H\x00\x00\x00\x01'
+2025-03-18 16:06:04,985 DEBUG tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-03-18 16:06:04,985 DEBUG tag: YCbCrPositioning (531) - type: short (3) - value: b'\x00\x01'
+2025-03-18 16:06:04,985 DEBUG tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00f'
+2025-03-18 16:06:04,993 DEBUG ['tesseract', '/var/folders/bx/5my6659x077b28kz2qwk1blc0000gn/T/tess_9uh544b3_input.JPEG', '/var/folders/bx/5my6659x077b28kz2qwk1blc0000gn/T/tess_9uh544b3', '-l', 'eng', 'txt']
+2025-03-18 16:06:05,302 DEBUG connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-03-18 16:06:05,302 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x137af1e80>
+2025-03-18 16:06:05,302 DEBUG send_request_headers.started request=<Request [b'POST']>
+2025-03-18 16:06:05,302 DEBUG send_request_headers.complete
+2025-03-18 16:06:05,302 DEBUG send_request_body.started request=<Request [b'POST']>
+2025-03-18 16:06:05,302 DEBUG send_request_body.complete
+2025-03-18 16:06:05,303 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2025-03-18 16:06:17,953 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Tue, 18 Mar 2025 19:06:17 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-03-18 16:06:17,954 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-18 16:06:17,954 DEBUG receive_response_body.started request=<Request [b'POST']>
+2025-03-18 16:06:17,954 DEBUG receive_response_body.complete
+2025-03-18 16:06:17,954 DEBUG response_closed.started
+2025-03-18 16:06:17,954 DEBUG response_closed.complete
+2025-03-18 16:07:00,289 INFO 127.0.0.1 - - [18/Mar/2025 16:07:00] "POST /process HTTP/1.1" 200 -
+2025-03-18 16:07:30,131 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/ai_processing.py', reloading
+2025-03-18 16:07:30,264 INFO  * Restarting with stat
+2025-03-18 16:07:31,021 WARNING  * Debugger is active!
+2025-03-18 16:07:31,029 INFO  * Debugger PIN: 113-587-870
+2025-03-18 16:07:33,223 INFO 127.0.0.1 - - [18/Mar/2025 16:07:33] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-18 16:07:33,263 INFO 127.0.0.1 - - [18/Mar/2025 16:07:33] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-18 16:07:33,264 INFO 127.0.0.1 - - [18/Mar/2025 16:07:33] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 16:07:33,323 INFO 127.0.0.1 - - [18/Mar/2025 16:07:33] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-18 16:07:39,753 DEBUG tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-03-18 16:07:39,753 DEBUG tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 86 - value: b'\x00\x00\x00H\x00\x00\x00\x01'
+2025-03-18 16:07:39,753 DEBUG tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 94 - value: b'\x00\x00\x00H\x00\x00\x00\x01'
+2025-03-18 16:07:39,753 DEBUG tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-03-18 16:07:39,753 DEBUG tag: YCbCrPositioning (531) - type: short (3) - value: b'\x00\x01'
+2025-03-18 16:07:39,753 DEBUG tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00f'
+2025-03-18 16:07:39,766 DEBUG ['tesseract', '/var/folders/bx/5my6659x077b28kz2qwk1blc0000gn/T/tess_u409sygp_input.JPEG', '/var/folders/bx/5my6659x077b28kz2qwk1blc0000gn/T/tess_u409sygp', '-l', 'eng', 'txt']
+2025-03-18 16:07:40,386 DEBUG connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-03-18 16:07:40,386 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x125ebdd30>
+2025-03-18 16:07:40,386 DEBUG send_request_headers.started request=<Request [b'POST']>
+2025-03-18 16:07:40,386 DEBUG send_request_headers.complete
+2025-03-18 16:07:40,386 DEBUG send_request_body.started request=<Request [b'POST']>
+2025-03-18 16:07:40,387 DEBUG send_request_body.complete
+2025-03-18 16:07:40,387 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2025-03-18 16:07:59,148 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Tue, 18 Mar 2025 19:07:59 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-03-18 16:07:59,149 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-18 16:07:59,149 DEBUG receive_response_body.started request=<Request [b'POST']>
+2025-03-18 16:07:59,149 DEBUG receive_response_body.complete
+2025-03-18 16:07:59,149 DEBUG response_closed.started
+2025-03-18 16:07:59,149 DEBUG response_closed.complete
+2025-03-18 16:08:08,776 INFO 127.0.0.1 - - [18/Mar/2025 16:08:08] "POST /process HTTP/1.1" 200 -
+2025-03-18 16:13:36,792 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/ai_processing.py', reloading
+2025-03-18 16:13:36,875 INFO  * Restarting with stat
+2025-03-18 16:13:37,655 WARNING  * Debugger is active!
+2025-03-18 16:13:37,664 INFO  * Debugger PIN: 113-587-870
+2025-03-18 16:13:42,839 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/ai_processing.py', reloading
+2025-03-18 16:13:42,923 INFO  * Restarting with stat
+2025-03-18 16:13:43,488 WARNING  * Debugger is active!
+2025-03-18 16:13:43,495 INFO  * Debugger PIN: 113-587-870
+2025-03-18 16:13:49,668 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/report_generation.py', reloading
+2025-03-18 16:13:49,787 INFO  * Restarting with stat
+2025-03-18 16:13:50,392 WARNING  * Debugger is active!
+2025-03-18 16:13:50,399 INFO  * Debugger PIN: 113-587-870
+2025-03-18 16:14:12,099 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/report_generation.py', reloading
+2025-03-18 16:14:12,164 INFO  * Restarting with stat
+2025-03-18 16:14:12,726 WARNING  * Debugger is active!
+2025-03-18 16:14:12,733 INFO  * Debugger PIN: 113-587-870
+2025-03-18 16:14:24,145 INFO 127.0.0.1 - - [18/Mar/2025 16:14:24] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-18 16:14:24,177 INFO 127.0.0.1 - - [18/Mar/2025 16:14:24] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 16:14:24,179 INFO 127.0.0.1 - - [18/Mar/2025 16:14:24] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-18 16:14:24,237 INFO 127.0.0.1 - - [18/Mar/2025 16:14:24] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-18 16:14:28,574 DEBUG tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-03-18 16:14:28,574 DEBUG tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 86 - value: b'\x00\x00\x00H\x00\x00\x00\x01'
+2025-03-18 16:14:28,574 DEBUG tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 94 - value: b'\x00\x00\x00H\x00\x00\x00\x01'
+2025-03-18 16:14:28,574 DEBUG tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-03-18 16:14:28,574 DEBUG tag: YCbCrPositioning (531) - type: short (3) - value: b'\x00\x01'
+2025-03-18 16:14:28,574 DEBUG tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00f'
+2025-03-18 16:14:28,587 DEBUG ['tesseract', '/var/folders/bx/5my6659x077b28kz2qwk1blc0000gn/T/tess_8fr1moth_input.JPEG', '/var/folders/bx/5my6659x077b28kz2qwk1blc0000gn/T/tess_8fr1moth', '-l', 'eng', 'txt']
+2025-03-18 16:14:29,187 DEBUG connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-03-18 16:14:29,188 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x113731d30>
+2025-03-18 16:14:29,188 DEBUG send_request_headers.started request=<Request [b'POST']>
+2025-03-18 16:14:29,188 DEBUG send_request_headers.complete
+2025-03-18 16:14:29,188 DEBUG send_request_body.started request=<Request [b'POST']>
+2025-03-18 16:14:29,188 DEBUG send_request_body.complete
+2025-03-18 16:14:29,188 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2025-03-18 16:14:56,661 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Tue, 18 Mar 2025 19:14:56 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-03-18 16:14:56,663 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-18 16:14:56,663 DEBUG receive_response_body.started request=<Request [b'POST']>
+2025-03-18 16:14:56,663 DEBUG receive_response_body.complete
+2025-03-18 16:14:56,663 DEBUG response_closed.started
+2025-03-18 16:14:56,663 DEBUG response_closed.complete
+2025-03-18 16:15:05,587 INFO 127.0.0.1 - - [18/Mar/2025 16:15:05] "POST /process HTTP/1.1" 200 -
+2025-03-18 16:15:27,768 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/report_generation.py', reloading
+2025-03-18 16:15:27,847 INFO  * Restarting with stat
+2025-03-18 16:15:28,599 WARNING  * Debugger is active!
+2025-03-18 16:15:28,606 INFO  * Debugger PIN: 113-587-870
+2025-03-18 16:16:39,384 INFO 127.0.0.1 - - [18/Mar/2025 16:16:39] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-18 16:16:39,427 INFO 127.0.0.1 - - [18/Mar/2025 16:16:39] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-18 16:16:39,427 INFO 127.0.0.1 - - [18/Mar/2025 16:16:39] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 16:16:39,474 INFO 127.0.0.1 - - [18/Mar/2025 16:16:39] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-18 16:16:42,837 DEBUG connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-03-18 16:16:42,838 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x1314f8440>
+2025-03-18 16:16:42,838 DEBUG send_request_headers.started request=<Request [b'POST']>
+2025-03-18 16:16:42,839 DEBUG send_request_headers.complete
+2025-03-18 16:16:42,839 DEBUG send_request_body.started request=<Request [b'POST']>
+2025-03-18 16:16:42,839 DEBUG send_request_body.complete
+2025-03-18 16:16:42,840 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2025-03-18 16:16:52,725 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Tue, 18 Mar 2025 19:16:52 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-03-18 16:16:52,725 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-18 16:16:52,725 DEBUG receive_response_body.started request=<Request [b'POST']>
+2025-03-18 16:16:52,726 DEBUG receive_response_body.complete
+2025-03-18 16:16:52,726 DEBUG response_closed.started
+2025-03-18 16:16:52,726 DEBUG response_closed.complete
+2025-03-18 16:17:00,884 INFO 127.0.0.1 - - [18/Mar/2025 16:17:00] "POST /process HTTP/1.1" 200 -
+2025-03-18 16:21:23,235 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/report_generation.py', reloading
+2025-03-18 16:21:23,384 INFO  * Restarting with stat
+2025-03-18 16:21:24,141 WARNING  * Debugger is active!
+2025-03-18 16:21:24,148 INFO  * Debugger PIN: 113-587-870
+2025-03-18 16:21:28,594 DEBUG tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-03-18 16:21:28,594 DEBUG tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 86 - value: b'\x00\x00\x00H\x00\x00\x00\x01'
+2025-03-18 16:21:28,594 DEBUG tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 94 - value: b'\x00\x00\x00H\x00\x00\x00\x01'
+2025-03-18 16:21:28,594 DEBUG tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-03-18 16:21:28,594 DEBUG tag: YCbCrPositioning (531) - type: short (3) - value: b'\x00\x01'
+2025-03-18 16:21:28,594 DEBUG tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00f'
+2025-03-18 16:21:28,607 DEBUG ['tesseract', '/var/folders/bx/5my6659x077b28kz2qwk1blc0000gn/T/tess_a4h1tm2w_input.JPEG', '/var/folders/bx/5my6659x077b28kz2qwk1blc0000gn/T/tess_a4h1tm2w', '-l', 'eng', 'txt']
+2025-03-18 16:21:29,222 DEBUG connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-03-18 16:21:29,223 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x134f19e80>
+2025-03-18 16:21:29,223 DEBUG send_request_headers.started request=<Request [b'POST']>
+2025-03-18 16:21:29,223 DEBUG send_request_headers.complete
+2025-03-18 16:21:29,223 DEBUG send_request_body.started request=<Request [b'POST']>
+2025-03-18 16:21:29,223 DEBUG send_request_body.complete
+2025-03-18 16:21:29,223 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2025-03-18 16:21:46,486 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Tue, 18 Mar 2025 19:21:46 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-03-18 16:21:46,486 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-18 16:21:46,486 DEBUG receive_response_body.started request=<Request [b'POST']>
+2025-03-18 16:21:46,486 DEBUG receive_response_body.complete
+2025-03-18 16:21:46,486 DEBUG response_closed.started
+2025-03-18 16:21:46,487 DEBUG response_closed.complete
+2025-03-18 16:21:55,433 INFO 127.0.0.1 - - [18/Mar/2025 16:21:55] "POST /process HTTP/1.1" 200 -
+2025-03-18 16:24:57,705 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/report_generation.py', reloading
+2025-03-18 16:24:57,779 INFO  * Restarting with stat
+2025-03-18 16:24:58,485 WARNING  * Debugger is active!
+2025-03-18 16:24:58,492 INFO  * Debugger PIN: 113-587-870
+2025-03-18 16:25:17,012 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/report_generation.py', reloading
+2025-03-18 16:25:17,111 INFO  * Restarting with stat
+2025-03-18 16:25:17,803 WARNING  * Debugger is active!
+2025-03-18 16:25:17,810 INFO  * Debugger PIN: 113-587-870
+2025-03-18 16:25:24,616 DEBUG tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-03-18 16:25:24,616 DEBUG tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 86 - value: b'\x00\x00\x00H\x00\x00\x00\x01'
+2025-03-18 16:25:24,616 DEBUG tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 94 - value: b'\x00\x00\x00H\x00\x00\x00\x01'
+2025-03-18 16:25:24,616 DEBUG tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-03-18 16:25:24,616 DEBUG tag: YCbCrPositioning (531) - type: short (3) - value: b'\x00\x01'
+2025-03-18 16:25:24,617 DEBUG tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00f'
+2025-03-18 16:25:24,630 DEBUG ['tesseract', '/var/folders/bx/5my6659x077b28kz2qwk1blc0000gn/T/tess_37sin3s2_input.JPEG', '/var/folders/bx/5my6659x077b28kz2qwk1blc0000gn/T/tess_37sin3s2', '-l', 'eng', 'txt']
+2025-03-18 16:25:25,249 DEBUG connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-03-18 16:25:25,250 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x108b39e80>
+2025-03-18 16:25:25,250 DEBUG send_request_headers.started request=<Request [b'POST']>
+2025-03-18 16:25:25,250 DEBUG send_request_headers.complete
+2025-03-18 16:25:25,250 DEBUG send_request_body.started request=<Request [b'POST']>
+2025-03-18 16:25:25,250 DEBUG send_request_body.complete
+2025-03-18 16:25:25,250 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2025-03-18 16:25:42,506 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Tue, 18 Mar 2025 19:25:42 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-03-18 16:25:42,506 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-18 16:25:42,506 DEBUG receive_response_body.started request=<Request [b'POST']>
+2025-03-18 16:25:42,506 DEBUG receive_response_body.complete
+2025-03-18 16:25:42,506 DEBUG response_closed.started
+2025-03-18 16:25:42,506 DEBUG response_closed.complete
+2025-03-18 16:26:44,182 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/report_generation.py', reloading
+2025-03-18 16:26:44,266 INFO  * Restarting with stat
+2025-03-18 16:26:44,999 WARNING  * Debugger is active!
+2025-03-18 16:26:45,007 INFO  * Debugger PIN: 113-587-870
+2025-03-18 16:29:01,282 INFO 127.0.0.1 - - [18/Mar/2025 16:29:01] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-18 16:29:01,320 INFO 127.0.0.1 - - [18/Mar/2025 16:29:01] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 16:29:01,320 INFO 127.0.0.1 - - [18/Mar/2025 16:29:01] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-18 16:29:01,376 INFO 127.0.0.1 - - [18/Mar/2025 16:29:01] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-18 16:29:04,979 DEBUG connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-03-18 16:29:04,980 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x107154440>
+2025-03-18 16:29:04,980 DEBUG send_request_headers.started request=<Request [b'POST']>
+2025-03-18 16:29:04,981 DEBUG send_request_headers.complete
+2025-03-18 16:29:04,981 DEBUG send_request_body.started request=<Request [b'POST']>
+2025-03-18 16:29:04,981 DEBUG send_request_body.complete
+2025-03-18 16:29:04,981 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2025-03-18 16:29:14,425 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Tue, 18 Mar 2025 19:29:14 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-03-18 16:29:14,425 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-18 16:29:14,425 DEBUG receive_response_body.started request=<Request [b'POST']>
+2025-03-18 16:29:14,426 DEBUG receive_response_body.complete
+2025-03-18 16:29:14,426 DEBUG response_closed.started
+2025-03-18 16:29:14,426 DEBUG response_closed.complete
+2025-03-18 16:29:15,425 INFO 127.0.0.1 - - [18/Mar/2025 16:29:15] "POST /process HTTP/1.1" 200 -
+2025-03-18 16:29:17,911 INFO 127.0.0.1 - - [18/Mar/2025 16:29:17] "GET /download/5c2c21fa-e7a4-4959-9d40-89efdeba5e67?format=docx HTTP/1.1" 200 -
+2025-03-18 16:29:17,926 INFO 127.0.0.1 - - [18/Mar/2025 16:29:17] "GET /download/5c2c21fa-e7a4-4959-9d40-89efdeba5e67?format=docx HTTP/1.1" 200 -
+2025-03-18 16:29:17,946 INFO 127.0.0.1 - - [18/Mar/2025 16:29:17] "[35m[1mHEAD /download/5c2c21fa-e7a4-4959-9d40-89efdeba5e67?format=docx HTTP/1.1[0m" 206 -
+2025-03-18 17:30:49,415 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/report_generation.py', reloading
+2025-03-18 17:30:49,550 INFO  * Restarting with stat
+2025-03-18 17:30:50,335 WARNING  * Debugger is active!
+2025-03-18 17:30:50,345 INFO  * Debugger PIN: 113-587-870
+2025-03-18 17:31:08,895 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/report_generation.py', reloading
+2025-03-18 17:31:09,045 INFO  * Restarting with stat
+2025-03-18 17:31:09,653 WARNING  * Debugger is active!
+2025-03-18 17:31:09,659 INFO  * Debugger PIN: 113-587-870
+2025-03-18 17:31:14,524 INFO 127.0.0.1 - - [18/Mar/2025 17:31:14] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-18 17:31:14,551 INFO 127.0.0.1 - - [18/Mar/2025 17:31:14] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 17:31:14,552 INFO 127.0.0.1 - - [18/Mar/2025 17:31:14] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-18 17:31:14,664 INFO 127.0.0.1 - - [18/Mar/2025 17:31:14] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-18 17:31:20,153 DEBUG connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-03-18 17:31:20,154 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x1049cc440>
+2025-03-18 17:31:20,154 DEBUG send_request_headers.started request=<Request [b'POST']>
+2025-03-18 17:31:20,154 DEBUG send_request_headers.complete
+2025-03-18 17:31:20,155 DEBUG send_request_body.started request=<Request [b'POST']>
+2025-03-18 17:31:20,155 DEBUG send_request_body.complete
+2025-03-18 17:31:20,155 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2025-03-18 17:31:44,589 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Tue, 18 Mar 2025 20:31:44 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-03-18 17:31:44,590 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-18 17:31:44,590 DEBUG receive_response_body.started request=<Request [b'POST']>
+2025-03-18 17:31:44,590 DEBUG receive_response_body.complete
+2025-03-18 17:31:44,590 DEBUG response_closed.started
+2025-03-18 17:31:44,590 DEBUG response_closed.complete
+2025-03-18 17:32:00,626 INFO 127.0.0.1 - - [18/Mar/2025 17:32:00] "POST /process HTTP/1.1" 200 -
+2025-03-18 17:33:32,559 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/report_generation.py', reloading
+2025-03-18 17:33:32,625 INFO  * Restarting with stat
+2025-03-18 17:33:33,397 WARNING  * Debugger is active!
+2025-03-18 17:33:33,404 INFO  * Debugger PIN: 113-587-870
+2025-03-18 17:33:57,119 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/report_generation.py', reloading
+2025-03-18 17:33:57,182 INFO  * Restarting with stat
+2025-03-18 17:33:57,880 WARNING  * Debugger is active!
+2025-03-18 17:33:57,886 INFO  * Debugger PIN: 113-587-870
+2025-03-18 17:34:15,449 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/report_generation.py', reloading
+2025-03-18 17:34:15,512 INFO  * Restarting with stat
+2025-03-18 17:34:16,139 WARNING  * Debugger is active!
+2025-03-18 17:34:16,145 INFO  * Debugger PIN: 113-587-870
+2025-03-18 17:34:29,157 INFO 127.0.0.1 - - [18/Mar/2025 17:34:29] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-18 17:34:29,179 INFO 127.0.0.1 - - [18/Mar/2025 17:34:29] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 17:34:29,180 INFO 127.0.0.1 - - [18/Mar/2025 17:34:29] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-18 17:34:29,234 INFO 127.0.0.1 - - [18/Mar/2025 17:34:29] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-18 17:34:32,778 DEBUG connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-03-18 17:34:32,779 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x1071d0440>
+2025-03-18 17:34:32,779 DEBUG send_request_headers.started request=<Request [b'POST']>
+2025-03-18 17:34:32,780 DEBUG send_request_headers.complete
+2025-03-18 17:34:32,780 DEBUG send_request_body.started request=<Request [b'POST']>
+2025-03-18 17:34:32,780 DEBUG send_request_body.complete
+2025-03-18 17:34:32,780 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2025-03-18 17:34:43,385 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Tue, 18 Mar 2025 20:34:43 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-03-18 17:34:43,385 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-18 17:34:43,385 DEBUG receive_response_body.started request=<Request [b'POST']>
+2025-03-18 17:34:43,385 DEBUG receive_response_body.complete
+2025-03-18 17:34:43,385 DEBUG response_closed.started
+2025-03-18 17:34:43,385 DEBUG response_closed.complete
+2025-03-18 17:35:20,550 INFO 127.0.0.1 - - [18/Mar/2025 17:35:20] "POST /process HTTP/1.1" 200 -
+2025-03-18 17:38:10,713 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/ai_processing.py', reloading
+2025-03-18 17:38:10,845 INFO  * Restarting with stat
+2025-03-18 17:38:11,625 WARNING  * Debugger is active!
+2025-03-18 17:38:11,632 INFO  * Debugger PIN: 113-587-870
+2025-03-18 17:39:34,055 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.2.55.26:5000
+2025-03-18 17:39:34,055 INFO [33mPress CTRL+C to quit[0m
+2025-03-18 17:39:34,056 INFO  * Restarting with stat
+2025-03-18 17:39:34,608 WARNING  * Debugger is active!
+2025-03-18 17:39:34,615 INFO  * Debugger PIN: 113-587-870
+2025-03-18 17:39:38,625 INFO 127.0.0.1 - - [18/Mar/2025 17:39:38] "GET / HTTP/1.1" 200 -
+2025-03-18 17:39:38,662 INFO 127.0.0.1 - - [18/Mar/2025 17:39:38] "[33mGET /static/js/app.js HTTP/1.1[0m" 404 -
+2025-03-18 17:39:38,663 INFO 127.0.0.1 - - [18/Mar/2025 17:39:38] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-03-18 17:39:38,831 INFO 127.0.0.1 - - [18/Mar/2025 17:39:38] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-18 17:39:41,254 INFO 127.0.0.1 - - [18/Mar/2025 17:39:41] "GET /text-upload HTTP/1.1" 200 -
+2025-03-18 17:39:41,274 INFO 127.0.0.1 - - [18/Mar/2025 17:39:41] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 17:39:41,278 INFO 127.0.0.1 - - [18/Mar/2025 17:39:41] "GET /static/js/text-upload.js HTTP/1.1" 200 -
+2025-03-18 17:39:41,328 INFO 127.0.0.1 - - [18/Mar/2025 17:39:41] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-18 17:39:45,174 DEBUG connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-03-18 17:39:45,175 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x14e0a7230>
+2025-03-18 17:39:45,176 DEBUG send_request_headers.started request=<Request [b'POST']>
+2025-03-18 17:39:45,176 DEBUG send_request_headers.complete
+2025-03-18 17:39:45,176 DEBUG send_request_body.started request=<Request [b'POST']>
+2025-03-18 17:39:45,176 DEBUG send_request_body.complete
+2025-03-18 17:39:45,176 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2025-03-18 17:39:56,076 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Tue, 18 Mar 2025 20:39:56 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-03-18 17:39:56,077 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-18 17:39:56,078 DEBUG receive_response_body.started request=<Request [b'POST']>
+2025-03-18 17:39:56,078 DEBUG receive_response_body.complete
+2025-03-18 17:39:56,078 DEBUG response_closed.started
+2025-03-18 17:39:56,078 DEBUG response_closed.complete
+2025-03-18 17:40:09,464 INFO 127.0.0.1 - - [18/Mar/2025 17:40:09] "POST /process HTTP/1.1" 200 -
+2025-03-18 17:40:14,245 INFO 127.0.0.1 - - [18/Mar/2025 17:40:14] "GET /download/bfa2422b-825a-4c20-956b-74f1394972da?format=docx HTTP/1.1" 200 -
+2025-03-18 17:40:14,265 INFO 127.0.0.1 - - [18/Mar/2025 17:40:14] "GET /download/bfa2422b-825a-4c20-956b-74f1394972da?format=docx HTTP/1.1" 200 -
+2025-03-18 17:40:14,281 INFO 127.0.0.1 - - [18/Mar/2025 17:40:14] "[35m[1mHEAD /download/bfa2422b-825a-4c20-956b-74f1394972da?format=docx HTTP/1.1[0m" 206 -
+2025-03-18 17:40:49,030 INFO 127.0.0.1 - - [18/Mar/2025 17:40:49] "[36mGET /audio-upload HTTP/1.1[0m" 304 -
+2025-03-18 17:40:49,055 INFO 127.0.0.1 - - [18/Mar/2025 17:40:49] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 17:40:49,057 INFO 127.0.0.1 - - [18/Mar/2025 17:40:49] "[36mGET /static/js/audio-upload.js HTTP/1.1[0m" 304 -
+2025-03-18 17:40:49,123 INFO 127.0.0.1 - - [18/Mar/2025 17:40:49] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
