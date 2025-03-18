@@ -15,9 +15,8 @@ from vosk import Model, KaldiRecognizer
 import wave
 from dotenv import load_dotenv
 from docxtpl import DocxTemplate
-
-# -------------- Added: Import transformers for Llama2 --------------
-from transformers import pipeline
+import ollama
+from datetime import datetime
 
 # -------------- 1. Get absolute path of project root directory --------------
 # Assuming app.py is in backend directory, then:
@@ -55,14 +54,8 @@ vosk_models = {
 
 # --------------------------------------------------
 # -------------- 6. Initialize Llama2 model --------------
-# Using Hugging Face transformers pipeline
 # Note: Loading Llama2 model requires significant resources, recommended to run on GPU
 # --------------------------------------------------
-try:
-    llama2_generator = pipeline("text-generation", model="gpt2", truncation=True)
-except Exception as e:
-    logging.error("Llama2 initialization failed: " + str(e))
-    llama2_generator = None
 
 # -------------- 7. Configure logging --------------
 logging.basicConfig(
@@ -176,7 +169,7 @@ def process_docx(filepath):
         return ""
 
 
-def generate_report(data, format='docx', report_id=None):
+def generate_report(data, format='docx', report_id=None, original_filename=None):
     """
     Generate report file using template1.docx template.
     First generate DOCX file, render placeholders in template using docxtpl.
@@ -188,6 +181,7 @@ def generate_report(data, format='docx', report_id=None):
             examined_area, device_model, imaging_findings, diagnosis_summary, Comment
       format: 'docx' or 'pdf', default 'docx'
       report_id: Used to distinguish report filenames, if not provided use default filename
+      original_filename: Original uploaded filename to include in the generated report name
     
     Returns:
       Absolute path of generated report file
@@ -199,25 +193,48 @@ def generate_report(data, format='docx', report_id=None):
         # Load template document using DocxTemplate
         doc = DocxTemplate(template_path)
         
-        # Render template using docxtpl, data is context, template should contain following placeholders:
-        # NAME{patient_name}
-        # DATE{examination_date}
-        # SEX{sex}
-        # AGE: {age}
-        # REF.BY{refby}
-        # UHID NO: {uhidno}
-        # Examination Type{examination_type}
-        # Examined Area{examined_area}
-        # Device Model{device_model}
-        # Findings:{imaging_findings}
-        # Diagnosis:{diagnosis_summary}
-        # Comments:{Comment}
+        # Ensure data contains all required keys
+        required_keys = [
+            'patient_name', 'examination_date', 'sex', 'age', 'refby', 'uhidno',
+            'examination_type', 'examined_area', 'device_model', 'imaging_findings',
+            'diagnosis_summary', 'Comment'
+        ]
+        
+        # Fill missing keys with 'UNKNOWN' only if the key is not present
+        for key in required_keys:
+            if key not in data or not data[key]:
+                data[key] = 'UNKNOWN'
+        
+        # Debug: Print the data being used to render the template
+        print("Data being used for report generation:", data)
+        
+        # Render template using docxtpl, data is context
         doc.render(data)
         
-        # Ensure reports directory exists, generate absolute path for report saving (DOCX format)
+        # Process tables in the document
+        for table in doc.tables:
+            for row in table.rows:
+                for cell in row.cells:
+                    # Replace placeholders in each cell
+                    if cell.text and '{' in cell.text and '}' in cell.text:
+                        try:
+                            # Use format() to replace placeholders
+                            cell.text = cell.text.format(**data)
+                        except KeyError:
+                            # If placeholder key not found in data, leave as is
+                            pass
+        
+        # Ensure reports directory exists
         reports_dir = BASE_DIR / 'reports'
         reports_dir.mkdir(exist_ok=True)
-        docx_report_path = os.path.join(str(reports_dir), f'{report_id}.docx') if report_id else os.path.join(str(reports_dir), 'clinical_report.docx')
+        
+        # Generate filename based on report_id
+        if not report_id:
+            report_id = str(uuid.uuid4())
+        
+        # Construct full file paths
+        docx_report_path = os.path.join(str(reports_dir), f"{report_id}.docx")
+        pdf_report_path = os.path.join(str(reports_dir), f"{report_id}.pdf")
         
         # Save DOCX file
         doc.save(docx_report_path)
@@ -226,14 +243,13 @@ def generate_report(data, format='docx', report_id=None):
             # If PDF is needed, use docx2pdf library for conversion
             try:
                 from docx2pdf import convert as docx2pdf_convert
-                # Construct target PDF file path
-                pdf_report_path = os.path.join(str(reports_dir), f'{report_id}.pdf') if report_id else os.path.join(str(reports_dir), 'clinical_report.pdf')
                 # Convert generated DOCX to PDF
                 docx2pdf_convert(docx_report_path, pdf_report_path)
                 return pdf_report_path
             except Exception as conv_e:
                 logging.error(f"Failed to convert DOCX to PDF: {str(conv_e)}")
-                raise conv_e
+                # If conversion fails, return the DOCX file path instead
+                return docx_report_path
         else:
             # Return DOCX file path
             return docx_report_path
@@ -245,13 +261,10 @@ def generate_report(data, format='docx', report_id=None):
 
 def generate_report_with_ai(text):
     """
-    Generate structured report using Llama2
+    Generate structured report using Llama2 via Ollama
     text: Text obtained from OCR or speech recognition
     """
     try:
-        if llama2_generator is None:
-            raise ValueError("Llama2 generator not initialized")
-        
         # Construct prompt, specifying required fields
         prompt = f"""Below is some content. Generate a structured report strictly in JSON format with exactly the following keys. If a field is not mentioned in the content, set its value to "UNKNOWN". Do not include any text or commentary outside of the JSON object.
 
@@ -275,10 +288,11 @@ Content:
 Output only a valid JSON object.
 """
         
-        # Call Llama2 to generate
-        response = llama2_generator(prompt, max_length=800, do_sample=True, temperature=0.7)
-        generated_text = response[0]['generated_text']
+        # Call Llama2 via Ollama
+        response = ollama.generate(model='llama2', prompt=prompt)
+        generated_text = response['response']
         print(f"generated_text111: {generated_text}")
+        
         # Try to parse generated text as JSON
         try:
             return json.loads(generated_text)
@@ -355,8 +369,9 @@ def process_file():
         report_id = str(uuid.uuid4())
         os.makedirs('reports', exist_ok=True)
         # Generate both DOCX and PDF versions
-        docx_path = generate_report(structured_data, 'docx', report_id)
-        pdf_path = generate_report(structured_data, 'pdf', report_id)
+        original_filename = secure_filename(file.filename)
+        docx_path = generate_report(structured_data, 'docx', report_id, original_filename)
+        pdf_path = generate_report(structured_data, 'pdf', report_id, original_filename)
         
         # 6. Return report ID, download links for both formats and generated structured data
         return jsonify({

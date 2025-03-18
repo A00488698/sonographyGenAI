@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const fileInput = document.getElementById('textFileInput');
     const fileNameDisplay = document.getElementById('file-name');
     const textUploadForm = document.getElementById('textUploadForm');
+    const progressContainer = document.getElementById('progressContainer');
+    const progressBar = document.getElementById('progressBar');
+    const progressText = document.getElementById('progressText');
 
     if (!textUploadForm) {
         console.error('textUploadForm element not found');
@@ -49,12 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const formData = new FormData();
         formData.append('file', file);
-        formData.append('type', 'text'); // Default file type is text
-
-        const progressContainer = document.getElementById('progressContainer');
-        const progressBar = document.getElementById('progressBar');
-        progressContainer.style.display = 'block'; // Show progress bar
-        progressBar.style.width = '0%';
+        formData.append('type', 'text');
 
         try {
             const response = await fetch('http://localhost:5000/process', {
@@ -81,8 +79,6 @@ document.addEventListener('DOMContentLoaded', () => {
         } catch (error) {
             console.error('Error:', error);
             document.getElementById('status').innerText = `Generation failed: ${error.message}`;
-        } finally {
-            progressContainer.style.display = 'none'; // Hide progress bar
         }
     });
 });
