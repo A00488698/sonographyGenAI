@@ -1891,3 +1891,154 @@
 2025-03-18 17:52:41,680 DEBUG response_closed.started
 2025-03-18 17:52:41,680 DEBUG response_closed.complete
 2025-03-18 17:52:54,963 INFO 127.0.0.1 - - [18/Mar/2025 17:52:54] "POST /process HTTP/1.1" 200 -
+2025-03-18 17:58:57,463 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/text_processing.py', reloading
+2025-03-18 17:58:57,599 INFO  * Restarting with stat
+2025-03-18 17:58:58,340 WARNING  * Debugger is active!
+2025-03-18 17:58:58,347 INFO  * Debugger PIN: 113-587-870
+2025-03-18 17:59:35,649 DEBUG connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-03-18 17:59:35,649 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x10a4a7380>
+2025-03-18 17:59:35,649 DEBUG send_request_headers.started request=<Request [b'POST']>
+2025-03-18 17:59:35,649 DEBUG send_request_headers.complete
+2025-03-18 17:59:35,649 DEBUG send_request_body.started request=<Request [b'POST']>
+2025-03-18 17:59:35,649 DEBUG send_request_body.complete
+2025-03-18 17:59:35,649 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2025-03-18 17:59:42,988 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Tue, 18 Mar 2025 20:59:42 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-03-18 17:59:42,989 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-18 17:59:42,989 DEBUG receive_response_body.started request=<Request [b'POST']>
+2025-03-18 17:59:42,989 DEBUG receive_response_body.complete
+2025-03-18 17:59:42,989 DEBUG response_closed.started
+2025-03-18 17:59:42,989 DEBUG response_closed.complete
+2025-03-18 18:00:10,273 INFO 127.0.0.1 - - [18/Mar/2025 18:00:10] "POST /process HTTP/1.1" 200 -
+2025-03-18 18:02:32,900 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/text_processing.py', reloading
+2025-03-18 18:02:32,984 INFO  * Restarting with stat
+2025-03-18 18:02:33,722 WARNING  * Debugger is active!
+2025-03-18 18:02:33,730 INFO  * Debugger PIN: 113-587-870
+2025-03-18 18:02:39,960 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/text_processing.py', reloading
+2025-03-18 18:02:40,024 INFO  * Restarting with stat
+2025-03-18 18:02:40,582 WARNING  * Debugger is active!
+2025-03-18 18:02:40,588 INFO  * Debugger PIN: 113-587-870
+2025-03-18 18:02:45,760 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/report_generation.py', reloading
+2025-03-18 18:02:45,842 INFO  * Restarting with stat
+2025-03-18 18:02:46,401 WARNING  * Debugger is active!
+2025-03-18 18:02:46,407 INFO  * Debugger PIN: 113-587-870
+2025-03-18 18:02:59,826 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/report_generation.py', reloading
+2025-03-18 18:02:59,880 INFO  * Restarting with stat
+2025-03-18 18:03:00,429 WARNING  * Debugger is active!
+2025-03-18 18:03:00,435 INFO  * Debugger PIN: 113-587-870
+2025-03-18 18:03:19,038 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/app.py', reloading
+2025-03-18 18:03:19,122 INFO  * Restarting with stat
+2025-03-18 18:03:19,682 WARNING  * Debugger is active!
+2025-03-18 18:03:19,689 INFO  * Debugger PIN: 113-587-870
+2025-03-18 18:04:12,139 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/app.py', reloading
+2025-03-18 18:04:12,216 INFO  * Restarting with stat
+2025-03-18 18:04:12,840 WARNING  * Debugger is active!
+2025-03-18 18:04:12,846 INFO  * Debugger PIN: 113-587-870
+2025-03-18 18:04:28,710 DEBUG connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-03-18 18:04:28,710 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x1330a7380>
+2025-03-18 18:04:28,710 DEBUG send_request_headers.started request=<Request [b'POST']>
+2025-03-18 18:04:28,710 DEBUG send_request_headers.complete
+2025-03-18 18:04:28,710 DEBUG send_request_body.started request=<Request [b'POST']>
+2025-03-18 18:04:28,710 DEBUG send_request_body.complete
+2025-03-18 18:04:28,711 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2025-03-18 18:04:35,148 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Tue, 18 Mar 2025 21:04:35 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-03-18 18:04:35,148 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-18 18:04:35,148 DEBUG receive_response_body.started request=<Request [b'POST']>
+2025-03-18 18:04:35,148 DEBUG receive_response_body.complete
+2025-03-18 18:04:35,148 DEBUG response_closed.started
+2025-03-18 18:04:35,148 DEBUG response_closed.complete
+2025-03-18 18:04:53,210 INFO 127.0.0.1 - - [18/Mar/2025 18:04:53] "POST /process HTTP/1.1" 200 -
+2025-03-18 18:06:18,074 INFO 127.0.0.1 - - [18/Mar/2025 18:06:18] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-18 18:06:18,102 INFO 127.0.0.1 - - [18/Mar/2025 18:06:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 18:06:18,102 INFO 127.0.0.1 - - [18/Mar/2025 18:06:18] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-18 18:06:18,165 INFO 127.0.0.1 - - [18/Mar/2025 18:06:18] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-18 18:06:22,630 DEBUG close.started
+2025-03-18 18:06:22,631 DEBUG close.complete
+2025-03-18 18:06:22,631 DEBUG connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-03-18 18:06:22,631 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x133448e10>
+2025-03-18 18:06:22,631 DEBUG send_request_headers.started request=<Request [b'POST']>
+2025-03-18 18:06:22,632 DEBUG send_request_headers.complete
+2025-03-18 18:06:22,632 DEBUG send_request_body.started request=<Request [b'POST']>
+2025-03-18 18:06:22,632 DEBUG send_request_body.complete
+2025-03-18 18:06:22,632 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2025-03-18 18:06:31,441 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Tue, 18 Mar 2025 21:06:31 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-03-18 18:06:31,441 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-18 18:06:31,441 DEBUG receive_response_body.started request=<Request [b'POST']>
+2025-03-18 18:06:31,442 DEBUG receive_response_body.complete
+2025-03-18 18:06:31,442 DEBUG response_closed.started
+2025-03-18 18:06:31,442 DEBUG response_closed.complete
+2025-03-18 18:06:42,194 INFO 127.0.0.1 - - [18/Mar/2025 18:06:42] "POST /process HTTP/1.1" 200 -
+2025-03-18 18:06:43,393 INFO 127.0.0.1 - - [18/Mar/2025 18:06:43] "GET /download/83cb9325-0a97-48ff-ae8d-453452a983ec?format=docx HTTP/1.1" 200 -
+2025-03-18 18:06:43,411 INFO 127.0.0.1 - - [18/Mar/2025 18:06:43] "GET /download/83cb9325-0a97-48ff-ae8d-453452a983ec?format=docx HTTP/1.1" 200 -
+2025-03-18 18:06:43,430 INFO 127.0.0.1 - - [18/Mar/2025 18:06:43] "[35m[1mHEAD /download/83cb9325-0a97-48ff-ae8d-453452a983ec?format=docx HTTP/1.1[0m" 206 -
+2025-03-18 18:07:22,765 INFO 127.0.0.1 - - [18/Mar/2025 18:07:22] "GET /download/83cb9325-0a97-48ff-ae8d-453452a983ec?format=pdf HTTP/1.1" 200 -
+2025-03-18 18:07:22,781 INFO 127.0.0.1 - - [18/Mar/2025 18:07:22] "GET /download/83cb9325-0a97-48ff-ae8d-453452a983ec?format=pdf HTTP/1.1" 200 -
+2025-03-18 18:07:22,789 INFO 127.0.0.1 - - [18/Mar/2025 18:07:22] "[35m[1mHEAD /download/83cb9325-0a97-48ff-ae8d-453452a983ec?format=pdf HTTP/1.1[0m" 206 -
+2025-03-18 18:08:10,459 INFO 127.0.0.1 - - [18/Mar/2025 18:08:10] "[36mGET /audio-upload HTTP/1.1[0m" 304 -
+2025-03-18 18:08:10,498 INFO 127.0.0.1 - - [18/Mar/2025 18:08:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 18:08:10,502 INFO 127.0.0.1 - - [18/Mar/2025 18:08:10] "[36mGET /static/js/audio-upload.js HTTP/1.1[0m" 304 -
+2025-03-18 18:08:10,552 INFO 127.0.0.1 - - [18/Mar/2025 18:08:10] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-18 18:08:18,275 DEBUG close.started
+2025-03-18 18:08:18,275 DEBUG close.complete
+2025-03-18 18:08:18,275 DEBUG connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-03-18 18:08:18,275 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x13344bd90>
+2025-03-18 18:08:18,275 DEBUG send_request_headers.started request=<Request [b'POST']>
+2025-03-18 18:08:18,275 DEBUG send_request_headers.complete
+2025-03-18 18:08:18,275 DEBUG send_request_body.started request=<Request [b'POST']>
+2025-03-18 18:08:18,276 DEBUG send_request_body.complete
+2025-03-18 18:08:18,276 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2025-03-18 18:08:25,666 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Tue, 18 Mar 2025 21:08:25 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-03-18 18:08:25,667 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-18 18:08:25,667 DEBUG receive_response_body.started request=<Request [b'POST']>
+2025-03-18 18:08:25,667 DEBUG receive_response_body.complete
+2025-03-18 18:08:25,667 DEBUG response_closed.started
+2025-03-18 18:08:25,667 DEBUG response_closed.complete
+2025-03-18 18:08:33,223 INFO 127.0.0.1 - - [18/Mar/2025 18:08:33] "POST /process HTTP/1.1" 200 -
+2025-03-18 18:10:27,308 INFO 127.0.0.1 - - [18/Mar/2025 18:10:27] "[36mGET /audio-upload HTTP/1.1[0m" 304 -
+2025-03-18 18:10:27,323 INFO 127.0.0.1 - - [18/Mar/2025 18:10:27] "GET /static/js/audio-upload.js HTTP/1.1" 200 -
+2025-03-18 18:10:27,323 INFO 127.0.0.1 - - [18/Mar/2025 18:10:27] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 18:10:27,386 INFO 127.0.0.1 - - [18/Mar/2025 18:10:27] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-18 18:10:33,650 DEBUG close.started
+2025-03-18 18:10:33,650 DEBUG close.complete
+2025-03-18 18:10:33,650 DEBUG connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-03-18 18:10:33,651 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x13345bbb0>
+2025-03-18 18:10:33,651 DEBUG send_request_headers.started request=<Request [b'POST']>
+2025-03-18 18:10:33,651 DEBUG send_request_headers.complete
+2025-03-18 18:10:33,651 DEBUG send_request_body.started request=<Request [b'POST']>
+2025-03-18 18:10:33,651 DEBUG send_request_body.complete
+2025-03-18 18:10:33,651 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2025-03-18 18:10:42,126 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Tue, 18 Mar 2025 21:10:42 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-03-18 18:10:42,127 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-18 18:10:42,127 DEBUG receive_response_body.started request=<Request [b'POST']>
+2025-03-18 18:10:42,127 DEBUG receive_response_body.complete
+2025-03-18 18:10:42,127 DEBUG response_closed.started
+2025-03-18 18:10:42,127 DEBUG response_closed.complete
+2025-03-18 18:10:48,249 INFO 127.0.0.1 - - [18/Mar/2025 18:10:48] "POST /process HTTP/1.1" 200 -
+2025-03-18 18:10:50,827 INFO 127.0.0.1 - - [18/Mar/2025 18:10:50] "GET /download/d19c09ec-83c7-4519-8b57-c22b117dc99e?format=docx HTTP/1.1" 200 -
+2025-03-18 18:10:50,845 INFO 127.0.0.1 - - [18/Mar/2025 18:10:50] "GET /download/d19c09ec-83c7-4519-8b57-c22b117dc99e?format=docx HTTP/1.1" 200 -
+2025-03-18 18:10:50,871 INFO 127.0.0.1 - - [18/Mar/2025 18:10:50] "[35m[1mHEAD /download/d19c09ec-83c7-4519-8b57-c22b117dc99e?format=docx HTTP/1.1[0m" 206 -
+2025-03-18 18:11:23,614 INFO 127.0.0.1 - - [18/Mar/2025 18:11:23] "GET /download/d19c09ec-83c7-4519-8b57-c22b117dc99e?format=pdf HTTP/1.1" 200 -
+2025-03-18 18:11:23,634 INFO 127.0.0.1 - - [18/Mar/2025 18:11:23] "GET /download/d19c09ec-83c7-4519-8b57-c22b117dc99e?format=pdf HTTP/1.1" 200 -
+2025-03-18 18:11:23,645 INFO 127.0.0.1 - - [18/Mar/2025 18:11:23] "[35m[1mHEAD /download/d19c09ec-83c7-4519-8b57-c22b117dc99e?format=pdf HTTP/1.1[0m" 206 -
+2025-03-18 18:13:25,745 INFO 127.0.0.1 - - [18/Mar/2025 18:13:25] "GET /audio-upload HTTP/1.1" 200 -
+2025-03-18 18:13:25,782 INFO 127.0.0.1 - - [18/Mar/2025 18:13:25] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 18:13:25,785 INFO 127.0.0.1 - - [18/Mar/2025 18:13:25] "GET /static/js/audio-upload.js HTTP/1.1" 200 -
+2025-03-18 18:13:25,840 INFO 127.0.0.1 - - [18/Mar/2025 18:13:25] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-18 18:13:32,336 DEBUG close.started
+2025-03-18 18:13:32,336 DEBUG close.complete
+2025-03-18 18:13:32,337 DEBUG connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-03-18 18:13:32,337 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x133459e00>
+2025-03-18 18:13:32,337 DEBUG send_request_headers.started request=<Request [b'POST']>
+2025-03-18 18:13:32,337 DEBUG send_request_headers.complete
+2025-03-18 18:13:32,337 DEBUG send_request_body.started request=<Request [b'POST']>
+2025-03-18 18:13:32,337 DEBUG send_request_body.complete
+2025-03-18 18:13:32,337 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2025-03-18 18:13:39,389 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Tue, 18 Mar 2025 21:13:39 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-03-18 18:13:39,390 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-18 18:13:39,390 DEBUG receive_response_body.started request=<Request [b'POST']>
+2025-03-18 18:13:39,390 DEBUG receive_response_body.complete
+2025-03-18 18:13:39,390 DEBUG response_closed.started
+2025-03-18 18:13:39,390 DEBUG response_closed.complete
+2025-03-18 18:13:44,106 INFO 127.0.0.1 - - [18/Mar/2025 18:13:44] "POST /process HTTP/1.1" 200 -
+2025-03-18 18:13:46,516 INFO 127.0.0.1 - - [18/Mar/2025 18:13:46] "GET /download/5a70c906-e4c9-4fe7-b883-2c5500574e36?format=docx HTTP/1.1" 200 -
+2025-03-18 18:13:46,534 INFO 127.0.0.1 - - [18/Mar/2025 18:13:46] "GET /download/5a70c906-e4c9-4fe7-b883-2c5500574e36?format=docx HTTP/1.1" 200 -
+2025-03-18 18:13:46,551 INFO 127.0.0.1 - - [18/Mar/2025 18:13:46] "[35m[1mHEAD /download/5a70c906-e4c9-4fe7-b883-2c5500574e36?format=docx HTTP/1.1[0m" 206 -

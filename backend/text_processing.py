@@ -5,7 +5,7 @@ import pytesseract
 from pydub import AudioSegment
 import wave
 import json
-from vosk import Model
+from vosk import Model, KaldiRecognizer
 import logging
 
 # Initialize Vosk speech recognition models globally
