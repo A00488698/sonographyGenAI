@@ -2,33 +2,33 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>上传临床笔记</title>
-    <!-- 引用全局样式，路径改为 /static/css/styles.css -->
+    <title>Upload Clinical Notes</title>
+    <!-- Reference global styles, path changed to /static/css/styles.css -->
     <link rel="stylesheet" href="/static/css/styles.css">
-    <!-- 引用 Font Awesome CDN，用于图标显示 -->
+    <!-- Reference Font Awesome CDN for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- 导航栏：使用 Flask 路由，而不是 .html 文件名 -->
+    <!-- Navigation bar: Use Flask routes instead of .html file names -->
     <div class="navbar">
-        <a href="/">首页</a>
-        <a href="/text-upload">上传临床笔记</a>
-        <a href="/audio-upload">上传音频文件</a>
+        <a href="/">Home</a>
+        <a href="/text-upload">Upload Clinical Notes</a>
+        <a href="/audio-upload">Upload Audio File</a>
     </div>
 
     <div class="container">
-        <h1>上传临床笔记</h1>
+        <h1>Upload Clinical Notes</h1>
         <form id="textUploadForm">
             <div class="drop-zone">
                 <div class="drop-zone-content">
                     <i class="fas fa-file-upload"></i>
-                    <p class="drop-zone__prompt">将文件拖放到此处或点击选择文件</p>
-                    <label for="textFileInput" class="file-input-label">选择文件</label>
+                    <p class="drop-zone__prompt">Drag and drop files here or click to select file</p>
+                    <label for="textFileInput" class="file-input-label">Select File</label>
                 </div>
                 <input type="file" id="textFileInput" class="file-input" accept=".txt,.pdf,.docx,.jpg,.jpeg">
             </div>
-            <p id="file-name">未选择文件</p>
-            <button type="submit" class="submit-btn">上传并生成报告</button>
+            <p id="file-name">No file selected</p>
+            <button type="submit" class="submit-btn">Upload and Generate Report</button>
         </form>
 
         <div id="progressContainer">
@@ -38,7 +38,7 @@
         <div id="download-links"></div>
     </div>
 
-    <!-- 引用前端脚本，路径改为 /static/js/text-upload.js -->
+    <!-- Reference frontend script, path changed to /static/js/text-upload.js -->
     <script src="/static/js/text-upload.js"></script>
 </body>
 </html>

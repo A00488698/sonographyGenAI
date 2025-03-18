@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>上传音频文件</title>
-    <!-- 引入全局样式，路径为 /static/css/styles.css -->
+    <title>Upload Audio File</title>
+    <!-- Include global styles, path is /static/css/styles.css -->
     <link rel="stylesheet" href="/static/css/styles.css">
-    <!-- 引入 Font Awesome 图标库 -->
+    <!-- Include Font Awesome icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- 导航栏，链接指向 Flask 路由 -->
+    <!-- Navigation bar, links point to Flask routes -->
     <div class="navbar">
-        <a href="/">首页</a>
-        <a href="/text-upload">上传临床笔记</a>
-        <a href="/audio-upload">上传音频文件</a>
+        <a href="/">Home</a>
+        <a href="/text-upload">Upload Clinical Notes</a>
+        <a href="/audio-upload">Upload Audio File</a>
     </div>
 
     <div class="container">
-        <h1>上传音频文件</h1>
+        <h1>Upload Audio File</h1>
         <div class="drop-zone">
             <div class="drop-zone-content">
-                <!-- 图标显示：音频文件 -->
+                <!-- Icon display: audio file -->
                 <i class="fas fa-file-audio"></i>
-                <p>将文件拖放到此处或点击选择文件</p>
-                <label for="audioFileInput" class="file-input-label">选择文件</label>
-                <!-- 文件输入：支持 .wav 和 .mp3 文件 -->
+                <p>Drag and drop files here or click to select file</p>
+                <label for="audioFileInput" class="file-input-label">Select File</label>
+                <!-- File input: supports .wav and .mp3 files -->
                 <input class="file-input" type="file" id="audioFileInput" accept=".wav,.mp3">
             </div>
             <div id="file-name"></div>
         </div>
-        <button class="submit-btn" type="submit">上传并生成报告</button>
-        <!-- 简化进度条 -->
+        <!-- Add progress bar -->
         <div class="progress-wrapper">
             <div class="progress-container">
                 <div class="progress-bar" id="processProgress"></div>
             </div>
-            <div class="progress-label" id="progressLabel">0%</div>
+            <div class="progress-label" id="progressLabel"></div>
         </div>
+        <button class="submit-btn" type="submit">Upload and Generate Report</button>
         <div id="result"></div>
     </div>
 
-    <!-- 引入 JavaScript 脚本，路径为 /static/js/audio-upload.js -->
+    <!-- Include JavaScript script, path is /static/js/audio-upload.js -->
     <script src="/static/js/audio-upload.js"></script>
 </body>
 </html>

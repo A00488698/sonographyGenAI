@@ -332,3 +332,399 @@
 2025-03-16 02:14:15,980 INFO 127.0.0.1 - - [16/Mar/2025 02:14:15] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
 2025-03-16 02:14:15,998 INFO 127.0.0.1 - - [16/Mar/2025 02:14:15] "[36mGET /static/js/audio-upload.js HTTP/1.1[0m" 304 -
 2025-03-16 02:14:16,033 INFO 127.0.0.1 - - [16/Mar/2025 02:14:16] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 02:17:25,932 INFO 127.0.0.1 - - [16/Mar/2025 02:17:25] "GET /audio-upload HTTP/1.1" 200 -
+2025-03-16 02:17:25,951 INFO 127.0.0.1 - - [16/Mar/2025 02:17:25] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 02:17:25,952 INFO 127.0.0.1 - - [16/Mar/2025 02:17:25] "[36mGET /static/js/audio-upload.js HTTP/1.1[0m" 304 -
+2025-03-16 02:17:26,008 INFO 127.0.0.1 - - [16/Mar/2025 02:17:26] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 02:19:06,708 INFO 127.0.0.1 - - [16/Mar/2025 02:19:06] "GET /audio-upload HTTP/1.1" 200 -
+2025-03-16 02:19:06,730 INFO 127.0.0.1 - - [16/Mar/2025 02:19:06] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 02:19:06,730 INFO 127.0.0.1 - - [16/Mar/2025 02:19:06] "[36mGET /static/js/audio-upload.js HTTP/1.1[0m" 304 -
+2025-03-16 02:19:06,785 INFO 127.0.0.1 - - [16/Mar/2025 02:19:06] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 02:19:13,920 INFO 127.0.0.1 - - [16/Mar/2025 02:19:13] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-16 02:19:13,940 INFO 127.0.0.1 - - [16/Mar/2025 02:19:13] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 02:19:13,940 INFO 127.0.0.1 - - [16/Mar/2025 02:19:13] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-16 02:19:13,992 INFO 127.0.0.1 - - [16/Mar/2025 02:19:13] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 02:19:41,399 INFO 127.0.0.1 - - [16/Mar/2025 02:19:41] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-16 02:19:41,425 INFO 127.0.0.1 - - [16/Mar/2025 02:19:41] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-16 02:19:41,425 INFO 127.0.0.1 - - [16/Mar/2025 02:19:41] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 02:19:41,483 INFO 127.0.0.1 - - [16/Mar/2025 02:19:41] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 02:19:42,913 INFO 127.0.0.1 - - [16/Mar/2025 02:19:42] "[36mGET /audio-upload HTTP/1.1[0m" 304 -
+2025-03-16 02:19:42,944 INFO 127.0.0.1 - - [16/Mar/2025 02:19:42] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 02:19:42,947 INFO 127.0.0.1 - - [16/Mar/2025 02:19:42] "[36mGET /static/js/audio-upload.js HTTP/1.1[0m" 304 -
+2025-03-16 02:19:43,035 INFO 127.0.0.1 - - [16/Mar/2025 02:19:43] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 02:20:00,357 INFO 127.0.0.1 - - [16/Mar/2025 02:20:00] "[36mGET /audio-upload HTTP/1.1[0m" 304 -
+2025-03-16 02:20:00,379 INFO 127.0.0.1 - - [16/Mar/2025 02:20:00] "[36mGET /static/js/audio-upload.js HTTP/1.1[0m" 304 -
+2025-03-16 02:20:00,379 INFO 127.0.0.1 - - [16/Mar/2025 02:20:00] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 02:20:01,087 INFO 127.0.0.1 - - [16/Mar/2025 02:20:01] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-16 02:20:01,112 INFO 127.0.0.1 - - [16/Mar/2025 02:20:01] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 02:20:01,113 INFO 127.0.0.1 - - [16/Mar/2025 02:20:01] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-16 02:20:02,207 INFO 127.0.0.1 - - [16/Mar/2025 02:20:02] "[36mGET /audio-upload HTTP/1.1[0m" 304 -
+2025-03-16 02:20:02,228 INFO 127.0.0.1 - - [16/Mar/2025 02:20:02] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 02:20:02,229 INFO 127.0.0.1 - - [16/Mar/2025 02:20:02] "[36mGET /static/js/audio-upload.js HTTP/1.1[0m" 304 -
+2025-03-16 02:20:03,052 INFO 127.0.0.1 - - [16/Mar/2025 02:20:03] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-16 02:20:03,074 INFO 127.0.0.1 - - [16/Mar/2025 02:20:03] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 02:20:03,076 INFO 127.0.0.1 - - [16/Mar/2025 02:20:03] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-16 02:20:07,345 INFO 127.0.0.1 - - [16/Mar/2025 02:20:07] "[36mGET / HTTP/1.1[0m" 304 -
+2025-03-16 02:20:07,364 INFO 127.0.0.1 - - [16/Mar/2025 02:20:07] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 02:20:07,376 INFO 127.0.0.1 - - [16/Mar/2025 02:20:07] "[33mGET /static/js/app.js HTTP/1.1[0m" 404 -
+2025-03-16 02:20:07,383 INFO 127.0.0.1 - - [16/Mar/2025 02:20:07] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 02:20:09,813 INFO 127.0.0.1 - - [16/Mar/2025 02:20:09] "[36mGET /audio-upload HTTP/1.1[0m" 304 -
+2025-03-16 02:20:09,839 INFO 127.0.0.1 - - [16/Mar/2025 02:20:09] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 02:20:09,840 INFO 127.0.0.1 - - [16/Mar/2025 02:20:09] "[36mGET /static/js/audio-upload.js HTTP/1.1[0m" 304 -
+2025-03-16 02:20:12,064 INFO 127.0.0.1 - - [16/Mar/2025 02:20:12] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-16 02:20:12,092 INFO 127.0.0.1 - - [16/Mar/2025 02:20:12] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 02:20:12,095 INFO 127.0.0.1 - - [16/Mar/2025 02:20:12] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-16 02:20:13,728 INFO 127.0.0.1 - - [16/Mar/2025 02:20:13] "[36mGET / HTTP/1.1[0m" 304 -
+2025-03-16 02:20:13,754 INFO 127.0.0.1 - - [16/Mar/2025 02:20:13] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 02:20:13,758 INFO 127.0.0.1 - - [16/Mar/2025 02:20:13] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 02:20:13,760 INFO 127.0.0.1 - - [16/Mar/2025 02:20:13] "[33mGET /static/js/app.js HTTP/1.1[0m" 404 -
+2025-03-16 02:20:14,688 INFO 127.0.0.1 - - [16/Mar/2025 02:20:14] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-16 02:20:14,713 INFO 127.0.0.1 - - [16/Mar/2025 02:20:14] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 02:20:14,713 INFO 127.0.0.1 - - [16/Mar/2025 02:20:14] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-16 14:23:49,031 INFO 127.0.0.1 - - [16/Mar/2025 14:23:49] "POST /process HTTP/1.1" 200 -
+2025-03-16 14:23:50,828 INFO 127.0.0.1 - - [16/Mar/2025 14:23:50] "GET /download/43058b2a-cab8-4290-9d79-59e57f8087b0?format=docx HTTP/1.1" 200 -
+2025-03-16 14:23:50,844 INFO 127.0.0.1 - - [16/Mar/2025 14:23:50] "GET /download/43058b2a-cab8-4290-9d79-59e57f8087b0?format=docx HTTP/1.1" 200 -
+2025-03-16 14:23:50,861 INFO 127.0.0.1 - - [16/Mar/2025 14:23:50] "[35m[1mHEAD /download/43058b2a-cab8-4290-9d79-59e57f8087b0?format=docx HTTP/1.1[0m" 206 -
+2025-03-16 14:26:18,344 INFO 127.0.0.1 - - [16/Mar/2025 14:26:18] "GET /text-upload HTTP/1.1" 200 -
+2025-03-16 14:26:18,373 INFO 127.0.0.1 - - [16/Mar/2025 14:26:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 14:26:18,375 INFO 127.0.0.1 - - [16/Mar/2025 14:26:18] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-16 14:26:18,483 INFO 127.0.0.1 - - [16/Mar/2025 14:26:18] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 14:26:49,581 INFO 127.0.0.1 - - [16/Mar/2025 14:26:49] "GET /text-upload HTTP/1.1" 200 -
+2025-03-16 14:26:49,608 INFO 127.0.0.1 - - [16/Mar/2025 14:26:49] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 14:26:49,608 INFO 127.0.0.1 - - [16/Mar/2025 14:26:49] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-16 14:26:49,671 INFO 127.0.0.1 - - [16/Mar/2025 14:26:49] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 14:26:56,414 DEBUG tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-03-16 14:26:56,414 DEBUG tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 86 - value: b'\x00\x00\x00H\x00\x00\x00\x01'
+2025-03-16 14:26:56,415 DEBUG tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 94 - value: b'\x00\x00\x00H\x00\x00\x00\x01'
+2025-03-16 14:26:56,415 DEBUG tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-03-16 14:26:56,415 DEBUG tag: YCbCrPositioning (531) - type: short (3) - value: b'\x00\x01'
+2025-03-16 14:26:56,415 DEBUG tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00f'
+2025-03-16 14:26:56,424 DEBUG ['tesseract', '/var/folders/bx/5my6659x077b28kz2qwk1blc0000gn/T/tess_heu76mwk_input.JPEG', '/var/folders/bx/5my6659x077b28kz2qwk1blc0000gn/T/tess_heu76mwk', '-l', 'chi_sim', 'txt']
+2025-03-16 14:26:58,438 INFO 127.0.0.1 - - [16/Mar/2025 14:26:58] "POST /process HTTP/1.1" 200 -
+2025-03-16 14:30:00,338 INFO 127.0.0.1 - - [16/Mar/2025 14:30:00] "POST /process HTTP/1.1" 200 -
+2025-03-16 14:30:10,297 INFO 127.0.0.1 - - [16/Mar/2025 14:30:10] "GET /download/46789f5e-8a25-4768-999d-97759752bc24?format=pdf HTTP/1.1" 200 -
+2025-03-16 14:30:10,314 INFO 127.0.0.1 - - [16/Mar/2025 14:30:10] "GET /download/46789f5e-8a25-4768-999d-97759752bc24?format=pdf HTTP/1.1" 200 -
+2025-03-16 14:30:10,323 INFO 127.0.0.1 - - [16/Mar/2025 14:30:10] "[35m[1mHEAD /download/46789f5e-8a25-4768-999d-97759752bc24?format=pdf HTTP/1.1[0m" 206 -
+2025-03-16 14:33:31,608 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/app.py', reloading
+2025-03-16 14:33:35,816 WARNING  * Debugger is active!
+2025-03-16 14:33:35,837 INFO  * Debugger PIN: 113-587-870
+2025-03-16 14:33:41,693 INFO 127.0.0.1 - - [16/Mar/2025 14:33:41] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-16 14:33:41,727 INFO 127.0.0.1 - - [16/Mar/2025 14:33:41] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 14:33:41,727 INFO 127.0.0.1 - - [16/Mar/2025 14:33:41] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-16 14:33:41,792 INFO 127.0.0.1 - - [16/Mar/2025 14:33:41] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 14:33:51,976 INFO 127.0.0.1 - - [16/Mar/2025 14:33:51] "POST /process HTTP/1.1" 200 -
+2025-03-16 14:33:53,314 INFO 127.0.0.1 - - [16/Mar/2025 14:33:53] "GET /download/d2859034-a538-47a9-a5fb-6e677035ac83?format=docx HTTP/1.1" 200 -
+2025-03-16 14:33:53,349 INFO 127.0.0.1 - - [16/Mar/2025 14:33:53] "GET /download/d2859034-a538-47a9-a5fb-6e677035ac83?format=docx HTTP/1.1" 200 -
+2025-03-16 14:33:53,365 INFO 127.0.0.1 - - [16/Mar/2025 14:33:53] "[35m[1mHEAD /download/d2859034-a538-47a9-a5fb-6e677035ac83?format=docx HTTP/1.1[0m" 206 -
+2025-03-16 14:45:26,753 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/app.py', reloading
+2025-03-16 14:45:30,407 WARNING  * Debugger is active!
+2025-03-16 14:45:30,428 INFO  * Debugger PIN: 113-587-870
+2025-03-16 14:48:37,993 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/app.py', reloading
+2025-03-16 14:48:40,396 WARNING  * Debugger is active!
+2025-03-16 14:48:40,419 INFO  * Debugger PIN: 113-587-870
+2025-03-16 14:49:15,077 INFO 127.0.0.1 - - [16/Mar/2025 14:49:15] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-16 14:49:15,105 INFO 127.0.0.1 - - [16/Mar/2025 14:49:15] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-16 14:49:15,105 INFO 127.0.0.1 - - [16/Mar/2025 14:49:15] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 14:49:15,167 INFO 127.0.0.1 - - [16/Mar/2025 14:49:15] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 14:49:25,175 INFO 127.0.0.1 - - [16/Mar/2025 14:49:25] "POST /process HTTP/1.1" 200 -
+2025-03-16 14:49:26,687 INFO 127.0.0.1 - - [16/Mar/2025 14:49:26] "GET /download/6a2cda40-0c1a-4203-8168-5076aa7c9515?format=docx HTTP/1.1" 200 -
+2025-03-16 14:49:26,723 INFO 127.0.0.1 - - [16/Mar/2025 14:49:26] "GET /download/6a2cda40-0c1a-4203-8168-5076aa7c9515?format=docx HTTP/1.1" 200 -
+2025-03-16 14:49:26,735 INFO 127.0.0.1 - - [16/Mar/2025 14:49:26] "[35m[1mHEAD /download/6a2cda40-0c1a-4203-8168-5076aa7c9515?format=docx HTTP/1.1[0m" 206 -
+2025-03-16 14:49:46,329 INFO 127.0.0.1 - - [16/Mar/2025 14:49:46] "GET /download/6a2cda40-0c1a-4203-8168-5076aa7c9515?format=pdf HTTP/1.1" 200 -
+2025-03-16 14:49:46,340 INFO 127.0.0.1 - - [16/Mar/2025 14:49:46] "GET /download/6a2cda40-0c1a-4203-8168-5076aa7c9515?format=pdf HTTP/1.1" 200 -
+2025-03-16 14:49:46,351 INFO 127.0.0.1 - - [16/Mar/2025 14:49:46] "[35m[1mHEAD /download/6a2cda40-0c1a-4203-8168-5076aa7c9515?format=pdf HTTP/1.1[0m" 206 -
+2025-03-16 14:52:12,863 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/app.py', reloading
+2025-03-16 14:52:16,217 WARNING  * Debugger is active!
+2025-03-16 14:52:16,238 INFO  * Debugger PIN: 113-587-870
+2025-03-16 14:52:34,140 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/app.py', reloading
+2025-03-16 14:52:36,700 WARNING  * Debugger is active!
+2025-03-16 14:52:36,720 INFO  * Debugger PIN: 113-587-870
+2025-03-16 14:53:08,675 INFO 127.0.0.1 - - [16/Mar/2025 14:53:08] "[33mGET /download/6a2cda40-0c1a-4203-8168-5076aa7c9515?format=pdf HTTP/1.1[0m" 404 -
+2025-03-16 14:53:13,075 INFO 127.0.0.1 - - [16/Mar/2025 14:53:13] "[33mGET /download/6a2cda40-0c1a-4203-8168-5076aa7c9515?format=pdf HTTP/1.1[0m" 404 -
+2025-03-16 14:53:31,117 INFO 127.0.0.1 - - [16/Mar/2025 14:53:31] "POST /process HTTP/1.1" 200 -
+2025-03-16 14:53:33,213 INFO 127.0.0.1 - - [16/Mar/2025 14:53:33] "[33mGET /download/1144050a-d227-47a6-beb0-f03198616c7a?format=pdf HTTP/1.1[0m" 404 -
+2025-03-16 14:53:46,120 INFO 127.0.0.1 - - [16/Mar/2025 14:53:46] "POST /process HTTP/1.1" 200 -
+2025-03-16 14:53:47,340 INFO 127.0.0.1 - - [16/Mar/2025 14:53:47] "GET /download/d79bca1b-046e-4e30-a3c1-15308369d79b?format=docx HTTP/1.1" 200 -
+2025-03-16 14:53:47,371 INFO 127.0.0.1 - - [16/Mar/2025 14:53:47] "GET /download/d79bca1b-046e-4e30-a3c1-15308369d79b?format=docx HTTP/1.1" 200 -
+2025-03-16 14:53:47,399 INFO 127.0.0.1 - - [16/Mar/2025 14:53:47] "[35m[1mHEAD /download/d79bca1b-046e-4e30-a3c1-15308369d79b?format=docx HTTP/1.1[0m" 206 -
+2025-03-16 15:02:54,890 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/app.py', reloading
+2025-03-16 15:02:58,941 WARNING  * Debugger is active!
+2025-03-16 15:02:58,965 INFO  * Debugger PIN: 113-587-870
+2025-03-16 15:03:15,676 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/app.py', reloading
+2025-03-16 15:03:18,020 WARNING  * Debugger is active!
+2025-03-16 15:03:18,040 INFO  * Debugger PIN: 113-587-870
+2025-03-16 15:03:19,110 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/app.py', reloading
+2025-03-16 15:03:21,499 WARNING  * Debugger is active!
+2025-03-16 15:03:21,518 INFO  * Debugger PIN: 113-587-870
+2025-03-16 15:03:27,819 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/app.py', reloading
+2025-03-16 15:03:30,269 WARNING  * Debugger is active!
+2025-03-16 15:03:30,298 INFO  * Debugger PIN: 113-587-870
+2025-03-16 15:03:31,385 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/app.py', reloading
+2025-03-16 15:03:33,861 WARNING  * Debugger is active!
+2025-03-16 15:03:33,894 INFO  * Debugger PIN: 113-587-870
+2025-03-16 15:06:09,664 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/app.py', reloading
+2025-03-16 15:06:12,147 WARNING  * Debugger is active!
+2025-03-16 15:06:12,166 INFO  * Debugger PIN: 113-587-870
+2025-03-16 15:08:38,659 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/app.py', reloading
+2025-03-16 15:08:41,205 WARNING  * Debugger is active!
+2025-03-16 15:08:41,225 INFO  * Debugger PIN: 113-587-870
+2025-03-16 15:16:18,814 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.2.12:5000
+2025-03-16 15:16:18,814 INFO [33mPress CTRL+C to quit[0m
+2025-03-16 15:16:18,815 INFO  * Restarting with stat
+2025-03-16 15:16:21,091 WARNING  * Debugger is active!
+2025-03-16 15:16:21,113 INFO  * Debugger PIN: 113-587-870
+2025-03-16 15:16:23,211 INFO 127.0.0.1 - - [16/Mar/2025 15:16:23] "[36mGET / HTTP/1.1[0m" 304 -
+2025-03-16 15:16:23,257 INFO 127.0.0.1 - - [16/Mar/2025 15:16:23] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 15:16:23,259 INFO 127.0.0.1 - - [16/Mar/2025 15:16:23] "[33mGET /static/js/app.js HTTP/1.1[0m" 404 -
+2025-03-16 15:16:23,267 INFO 127.0.0.1 - - [16/Mar/2025 15:16:23] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 15:16:24,378 INFO 127.0.0.1 - - [16/Mar/2025 15:16:24] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-16 15:16:24,407 INFO 127.0.0.1 - - [16/Mar/2025 15:16:24] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 15:16:24,411 INFO 127.0.0.1 - - [16/Mar/2025 15:16:24] "GET /static/js/text-upload.js HTTP/1.1" 200 -
+2025-03-16 15:16:24,526 INFO 127.0.0.1 - - [16/Mar/2025 15:16:24] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 15:16:35,805 INFO 127.0.0.1 - - [16/Mar/2025 15:16:35] "POST /process HTTP/1.1" 200 -
+2025-03-16 15:16:36,959 INFO 127.0.0.1 - - [16/Mar/2025 15:16:36] "GET /download/6549ed76-042e-49c2-a9c9-5475e305aa9a?format=pdf HTTP/1.1" 200 -
+2025-03-16 15:16:36,995 INFO 127.0.0.1 - - [16/Mar/2025 15:16:36] "GET /download/6549ed76-042e-49c2-a9c9-5475e305aa9a?format=pdf HTTP/1.1" 200 -
+2025-03-16 15:16:37,011 INFO 127.0.0.1 - - [16/Mar/2025 15:16:37] "[35m[1mHEAD /download/6549ed76-042e-49c2-a9c9-5475e305aa9a?format=pdf HTTP/1.1[0m" 206 -
+2025-03-16 15:20:29,561 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/app.py', reloading
+2025-03-16 15:20:30,278 INFO  * Restarting with stat
+2025-03-16 15:20:33,298 WARNING  * Debugger is active!
+2025-03-16 15:20:33,318 INFO  * Debugger PIN: 113-587-870
+2025-03-16 15:20:36,123 INFO 127.0.0.1 - - [16/Mar/2025 15:20:36] "[36mGET /download/6549ed76-042e-49c2-a9c9-5475e305aa9a?format=pdf HTTP/1.1[0m" 304 -
+2025-03-16 15:20:36,140 INFO 127.0.0.1 - - [16/Mar/2025 15:20:36] "GET /download/6549ed76-042e-49c2-a9c9-5475e305aa9a?format=pdf HTTP/1.1" 200 -
+2025-03-16 15:20:36,149 INFO 127.0.0.1 - - [16/Mar/2025 15:20:36] "[35m[1mHEAD /download/6549ed76-042e-49c2-a9c9-5475e305aa9a?format=pdf HTTP/1.1[0m" 206 -
+2025-03-16 15:20:39,924 INFO 127.0.0.1 - - [16/Mar/2025 15:20:39] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-16 15:20:39,952 INFO 127.0.0.1 - - [16/Mar/2025 15:20:39] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 15:20:39,954 INFO 127.0.0.1 - - [16/Mar/2025 15:20:39] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-16 15:20:40,014 INFO 127.0.0.1 - - [16/Mar/2025 15:20:40] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 15:21:28,136 INFO 127.0.0.1 - - [16/Mar/2025 15:21:28] "POST /process HTTP/1.1" 200 -
+2025-03-16 15:21:31,197 INFO 127.0.0.1 - - [16/Mar/2025 15:21:31] "GET /download/d19f9a42-de85-4c42-9303-317b57c2d67a?format=pdf HTTP/1.1" 200 -
+2025-03-16 15:21:31,222 INFO 127.0.0.1 - - [16/Mar/2025 15:21:31] "GET /download/d19f9a42-de85-4c42-9303-317b57c2d67a?format=pdf HTTP/1.1" 200 -
+2025-03-16 15:21:31,237 INFO 127.0.0.1 - - [16/Mar/2025 15:21:31] "[35m[1mHEAD /download/d19f9a42-de85-4c42-9303-317b57c2d67a?format=pdf HTTP/1.1[0m" 206 -
+2025-03-16 15:21:35,624 INFO 127.0.0.1 - - [16/Mar/2025 15:21:35] "GET /download/d19f9a42-de85-4c42-9303-317b57c2d67a?format=docx HTTP/1.1" 200 -
+2025-03-16 15:21:35,641 INFO 127.0.0.1 - - [16/Mar/2025 15:21:35] "GET /download/d19f9a42-de85-4c42-9303-317b57c2d67a?format=docx HTTP/1.1" 200 -
+2025-03-16 15:21:35,657 INFO 127.0.0.1 - - [16/Mar/2025 15:21:35] "[35m[1mHEAD /download/d19f9a42-de85-4c42-9303-317b57c2d67a?format=docx HTTP/1.1[0m" 206 -
+2025-03-16 15:22:21,295 INFO 127.0.0.1 - - [16/Mar/2025 15:22:21] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 15:23:51,048 INFO 127.0.0.1 - - [16/Mar/2025 15:23:51] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-16 15:23:51,078 INFO 127.0.0.1 - - [16/Mar/2025 15:23:51] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-16 15:23:51,079 INFO 127.0.0.1 - - [16/Mar/2025 15:23:51] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 15:23:51,196 INFO 127.0.0.1 - - [16/Mar/2025 15:23:51] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 15:23:51,965 INFO 127.0.0.1 - - [16/Mar/2025 15:23:51] "[36mGET / HTTP/1.1[0m" 304 -
+2025-03-16 15:23:51,996 INFO 127.0.0.1 - - [16/Mar/2025 15:23:51] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 15:23:52,007 INFO 127.0.0.1 - - [16/Mar/2025 15:23:52] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 15:23:52,008 INFO 127.0.0.1 - - [16/Mar/2025 15:23:52] "[33mGET /static/js/app.js HTTP/1.1[0m" 404 -
+2025-03-16 15:23:53,066 INFO 127.0.0.1 - - [16/Mar/2025 15:23:53] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-16 15:23:53,103 INFO 127.0.0.1 - - [16/Mar/2025 15:23:53] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 15:23:53,110 INFO 127.0.0.1 - - [16/Mar/2025 15:23:53] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-16 15:24:16,761 INFO 127.0.0.1 - - [16/Mar/2025 15:24:16] "POST /process HTTP/1.1" 200 -
+2025-03-16 15:25:07,237 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/app.py', reloading
+2025-03-16 15:25:08,001 INFO  * Restarting with stat
+2025-03-16 15:25:11,020 WARNING  * Debugger is active!
+2025-03-16 15:25:11,042 INFO  * Debugger PIN: 113-587-870
+2025-03-16 15:26:52,293 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/app.py', reloading
+2025-03-16 15:26:52,826 INFO  * Restarting with stat
+2025-03-16 15:26:55,037 WARNING  * Debugger is active!
+2025-03-16 15:26:55,058 INFO  * Debugger PIN: 113-587-870
+2025-03-16 15:29:17,731 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/app.py', reloading
+2025-03-16 15:29:18,134 INFO  * Restarting with stat
+2025-03-16 15:29:20,146 WARNING  * Debugger is active!
+2025-03-16 15:29:20,166 INFO  * Debugger PIN: 113-587-870
+2025-03-16 15:31:07,116 INFO 127.0.0.1 - - [16/Mar/2025 15:31:07] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-16 15:31:07,145 INFO 127.0.0.1 - - [16/Mar/2025 15:31:07] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 15:31:07,146 INFO 127.0.0.1 - - [16/Mar/2025 15:31:07] "GET /static/js/text-upload.js HTTP/1.1" 200 -
+2025-03-16 15:31:07,257 INFO 127.0.0.1 - - [16/Mar/2025 15:31:07] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 15:31:10,906 INFO 127.0.0.1 - - [16/Mar/2025 15:31:10] "GET /text-upload HTTP/1.1" 200 -
+2025-03-16 15:31:10,933 INFO 127.0.0.1 - - [16/Mar/2025 15:31:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 15:31:10,933 INFO 127.0.0.1 - - [16/Mar/2025 15:31:10] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-16 15:31:10,991 INFO 127.0.0.1 - - [16/Mar/2025 15:31:10] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 15:31:22,257 INFO 127.0.0.1 - - [16/Mar/2025 15:31:22] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-16 15:31:22,286 INFO 127.0.0.1 - - [16/Mar/2025 15:31:22] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 15:31:22,287 INFO 127.0.0.1 - - [16/Mar/2025 15:31:22] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-16 15:31:22,336 INFO 127.0.0.1 - - [16/Mar/2025 15:31:22] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 15:31:26,216 INFO 127.0.0.1 - - [16/Mar/2025 15:31:26] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-16 15:31:26,242 INFO 127.0.0.1 - - [16/Mar/2025 15:31:26] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 15:31:26,243 INFO 127.0.0.1 - - [16/Mar/2025 15:31:26] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-16 15:31:26,294 INFO 127.0.0.1 - - [16/Mar/2025 15:31:26] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 15:31:47,592 INFO 127.0.0.1 - - [16/Mar/2025 15:31:47] "[36mGET / HTTP/1.1[0m" 304 -
+2025-03-16 15:31:47,631 INFO 127.0.0.1 - - [16/Mar/2025 15:31:47] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 15:31:47,642 INFO 127.0.0.1 - - [16/Mar/2025 15:31:47] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 15:31:47,642 INFO 127.0.0.1 - - [16/Mar/2025 15:31:47] "[33mGET /static/js/app.js HTTP/1.1[0m" 404 -
+2025-03-16 15:31:48,230 INFO 127.0.0.1 - - [16/Mar/2025 15:31:48] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-16 15:31:48,254 INFO 127.0.0.1 - - [16/Mar/2025 15:31:48] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 15:31:48,256 INFO 127.0.0.1 - - [16/Mar/2025 15:31:48] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-16 15:31:48,310 INFO 127.0.0.1 - - [16/Mar/2025 15:31:48] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 15:32:06,794 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.2.12:5000
+2025-03-16 15:32:06,794 INFO [33mPress CTRL+C to quit[0m
+2025-03-16 15:32:06,795 INFO  * Restarting with stat
+2025-03-16 15:32:08,930 WARNING  * Debugger is active!
+2025-03-16 15:32:08,951 INFO  * Debugger PIN: 113-587-870
+2025-03-16 15:32:11,082 INFO 127.0.0.1 - - [16/Mar/2025 15:32:11] "[36mGET / HTTP/1.1[0m" 304 -
+2025-03-16 15:32:11,128 INFO 127.0.0.1 - - [16/Mar/2025 15:32:11] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 15:32:11,129 INFO 127.0.0.1 - - [16/Mar/2025 15:32:11] "[33mGET /static/js/app.js HTTP/1.1[0m" 404 -
+2025-03-16 15:32:11,133 INFO 127.0.0.1 - - [16/Mar/2025 15:32:11] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 15:32:11,937 INFO 127.0.0.1 - - [16/Mar/2025 15:32:11] "[36mGET / HTTP/1.1[0m" 304 -
+2025-03-16 15:32:11,958 INFO 127.0.0.1 - - [16/Mar/2025 15:32:11] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 15:32:11,959 INFO 127.0.0.1 - - [16/Mar/2025 15:32:11] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 15:32:11,961 INFO 127.0.0.1 - - [16/Mar/2025 15:32:11] "[33mGET /static/js/app.js HTTP/1.1[0m" 404 -
+2025-03-16 15:32:12,778 INFO 127.0.0.1 - - [16/Mar/2025 15:32:12] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-16 15:32:12,805 INFO 127.0.0.1 - - [16/Mar/2025 15:32:12] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 15:32:12,805 INFO 127.0.0.1 - - [16/Mar/2025 15:32:12] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-16 15:32:12,857 INFO 127.0.0.1 - - [16/Mar/2025 15:32:12] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 15:34:14,702 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/app.py', reloading
+2025-03-16 15:34:15,158 INFO  * Restarting with stat
+2025-03-16 15:34:18,220 WARNING  * Debugger is active!
+2025-03-16 15:34:18,250 INFO  * Debugger PIN: 113-587-870
+2025-03-16 15:34:19,334 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/app.py', reloading
+2025-03-16 15:34:19,872 INFO  * Restarting with stat
+2025-03-16 15:34:22,173 WARNING  * Debugger is active!
+2025-03-16 15:34:22,193 INFO  * Debugger PIN: 113-587-870
+2025-03-16 15:34:25,229 INFO 127.0.0.1 - - [16/Mar/2025 15:34:25] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-16 15:34:25,261 INFO 127.0.0.1 - - [16/Mar/2025 15:34:25] "GET /static/js/text-upload.js HTTP/1.1" 200 -
+2025-03-16 15:34:25,262 INFO 127.0.0.1 - - [16/Mar/2025 15:34:25] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 15:34:25,322 INFO 127.0.0.1 - - [16/Mar/2025 15:34:25] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 15:34:41,897 INFO 127.0.0.1 - - [16/Mar/2025 15:34:41] "POST /process HTTP/1.1" 200 -
+2025-03-16 15:34:43,246 INFO 127.0.0.1 - - [16/Mar/2025 15:34:43] "GET /download/f869dc5a-b6af-4ea3-9ae1-cff68641b313?format=docx HTTP/1.1" 200 -
+2025-03-16 15:34:43,268 INFO 127.0.0.1 - - [16/Mar/2025 15:34:43] "GET /download/f869dc5a-b6af-4ea3-9ae1-cff68641b313?format=docx HTTP/1.1" 200 -
+2025-03-16 15:34:43,292 INFO 127.0.0.1 - - [16/Mar/2025 15:34:43] "[35m[1mHEAD /download/f869dc5a-b6af-4ea3-9ae1-cff68641b313?format=docx HTTP/1.1[0m" 206 -
+2025-03-16 15:36:26,681 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/app.py', reloading
+2025-03-16 15:36:27,402 INFO  * Restarting with stat
+2025-03-16 15:36:30,275 WARNING  * Debugger is active!
+2025-03-16 15:36:30,300 INFO  * Debugger PIN: 113-587-870
+2025-03-16 15:36:38,762 INFO 127.0.0.1 - - [16/Mar/2025 15:36:38] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-16 15:36:38,796 INFO 127.0.0.1 - - [16/Mar/2025 15:36:38] "GET /static/js/text-upload.js HTTP/1.1" 200 -
+2025-03-16 15:36:38,797 INFO 127.0.0.1 - - [16/Mar/2025 15:36:38] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 15:36:38,849 INFO 127.0.0.1 - - [16/Mar/2025 15:36:38] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 15:36:55,159 INFO 127.0.0.1 - - [16/Mar/2025 15:36:55] "POST /process HTTP/1.1" 200 -
+2025-03-16 15:36:56,868 INFO 127.0.0.1 - - [16/Mar/2025 15:36:56] "GET /download/c9a680c0-5007-410d-9ff9-7104bede3d43?format=docx HTTP/1.1" 200 -
+2025-03-16 15:36:56,891 INFO 127.0.0.1 - - [16/Mar/2025 15:36:56] "GET /download/c9a680c0-5007-410d-9ff9-7104bede3d43?format=docx HTTP/1.1" 200 -
+2025-03-16 15:36:56,916 INFO 127.0.0.1 - - [16/Mar/2025 15:36:56] "[35m[1mHEAD /download/c9a680c0-5007-410d-9ff9-7104bede3d43?format=docx HTTP/1.1[0m" 206 -
+2025-03-16 15:42:05,972 INFO 127.0.0.1 - - [16/Mar/2025 15:42:05] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-16 15:42:06,004 INFO 127.0.0.1 - - [16/Mar/2025 15:42:06] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 15:42:06,004 INFO 127.0.0.1 - - [16/Mar/2025 15:42:06] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-16 15:42:06,068 INFO 127.0.0.1 - - [16/Mar/2025 15:42:06] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 15:42:20,381 INFO 127.0.0.1 - - [16/Mar/2025 15:42:20] "POST /process HTTP/1.1" 200 -
+2025-03-16 15:42:21,641 INFO 127.0.0.1 - - [16/Mar/2025 15:42:21] "GET /download/ff3e281e-9b71-411f-b1dc-ab409247c786?format=docx HTTP/1.1" 200 -
+2025-03-16 15:42:21,665 INFO 127.0.0.1 - - [16/Mar/2025 15:42:21] "GET /download/ff3e281e-9b71-411f-b1dc-ab409247c786?format=docx HTTP/1.1" 200 -
+2025-03-16 15:42:21,681 INFO 127.0.0.1 - - [16/Mar/2025 15:42:21] "[35m[1mHEAD /download/ff3e281e-9b71-411f-b1dc-ab409247c786?format=docx HTTP/1.1[0m" 206 -
+2025-03-16 15:44:51,611 INFO 127.0.0.1 - - [16/Mar/2025 15:44:51] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-16 15:44:51,644 INFO 127.0.0.1 - - [16/Mar/2025 15:44:51] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 15:44:51,644 INFO 127.0.0.1 - - [16/Mar/2025 15:44:51] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-16 15:44:51,706 INFO 127.0.0.1 - - [16/Mar/2025 15:44:51] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 15:45:04,894 INFO 127.0.0.1 - - [16/Mar/2025 15:45:04] "POST /process HTTP/1.1" 200 -
+2025-03-16 15:45:06,016 INFO 127.0.0.1 - - [16/Mar/2025 15:45:06] "GET /download/c7f81976-32f6-4271-810f-0b00bb81c788?format=docx HTTP/1.1" 200 -
+2025-03-16 15:45:06,043 INFO 127.0.0.1 - - [16/Mar/2025 15:45:06] "GET /download/c7f81976-32f6-4271-810f-0b00bb81c788?format=docx HTTP/1.1" 200 -
+2025-03-16 15:45:06,062 INFO 127.0.0.1 - - [16/Mar/2025 15:45:06] "[35m[1mHEAD /download/c7f81976-32f6-4271-810f-0b00bb81c788?format=docx HTTP/1.1[0m" 206 -
+2025-03-16 15:47:01,998 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/app.py', reloading
+2025-03-16 15:47:02,728 INFO  * Restarting with stat
+2025-03-16 15:47:05,539 WARNING  * Debugger is active!
+2025-03-16 15:47:05,561 INFO  * Debugger PIN: 113-587-870
+2025-03-16 15:47:12,936 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/app.py', reloading
+2025-03-16 15:47:13,333 INFO  * Restarting with stat
+2025-03-16 15:47:15,308 WARNING  * Debugger is active!
+2025-03-16 15:47:15,327 INFO  * Debugger PIN: 113-587-870
+2025-03-16 15:47:18,286 INFO 127.0.0.1 - - [16/Mar/2025 15:47:18] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-16 15:47:18,319 INFO 127.0.0.1 - - [16/Mar/2025 15:47:18] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-16 15:47:18,319 INFO 127.0.0.1 - - [16/Mar/2025 15:47:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 15:47:18,379 INFO 127.0.0.1 - - [16/Mar/2025 15:47:18] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 15:49:27,364 INFO 127.0.0.1 - - [16/Mar/2025 15:49:27] "POST /process HTTP/1.1" 200 -
+2025-03-16 17:43:06,391 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/app.py', reloading
+2025-03-16 17:43:07,159 INFO  * Restarting with stat
+2025-03-16 17:43:10,470 WARNING  * Debugger is active!
+2025-03-16 17:43:10,492 INFO  * Debugger PIN: 113-587-870
+2025-03-16 17:43:10,520 INFO 127.0.0.1 - - [16/Mar/2025 17:43:10] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-16 17:43:10,547 INFO 127.0.0.1 - - [16/Mar/2025 17:43:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 17:43:10,548 INFO 127.0.0.1 - - [16/Mar/2025 17:43:10] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-16 17:43:10,653 INFO 127.0.0.1 - - [16/Mar/2025 17:43:10] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 23:07:11,186 INFO 127.0.0.1 - - [16/Mar/2025 23:07:11] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-16 23:07:11,223 INFO 127.0.0.1 - - [16/Mar/2025 23:07:11] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 23:07:11,225 INFO 127.0.0.1 - - [16/Mar/2025 23:07:11] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-16 23:07:11,335 INFO 127.0.0.1 - - [16/Mar/2025 23:07:11] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 23:07:47,107 INFO 127.0.0.1 - - [16/Mar/2025 23:07:47] "POST /process HTTP/1.1" 200 -
+2025-03-16 23:07:49,670 INFO 127.0.0.1 - - [16/Mar/2025 23:07:49] "GET /download/f112b5d6-1508-4117-815a-bcfad4fe177a?format=docx HTTP/1.1" 200 -
+2025-03-16 23:07:49,692 INFO 127.0.0.1 - - [16/Mar/2025 23:07:49] "GET /download/f112b5d6-1508-4117-815a-bcfad4fe177a?format=docx HTTP/1.1" 200 -
+2025-03-16 23:07:49,717 INFO 127.0.0.1 - - [16/Mar/2025 23:07:49] "[35m[1mHEAD /download/f112b5d6-1508-4117-815a-bcfad4fe177a?format=docx HTTP/1.1[0m" 206 -
+2025-03-16 23:15:13,390 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.2.12:5000
+2025-03-16 23:15:13,391 INFO [33mPress CTRL+C to quit[0m
+2025-03-16 23:15:13,391 INFO  * Restarting with stat
+2025-03-16 23:15:15,380 WARNING  * Debugger is active!
+2025-03-16 23:15:15,404 INFO  * Debugger PIN: 113-587-870
+2025-03-16 23:15:18,152 INFO 127.0.0.1 - - [16/Mar/2025 23:15:18] "[36mGET / HTTP/1.1[0m" 304 -
+2025-03-16 23:15:18,177 INFO 127.0.0.1 - - [16/Mar/2025 23:15:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 23:15:18,177 INFO 127.0.0.1 - - [16/Mar/2025 23:15:18] "[33mGET /static/js/app.js HTTP/1.1[0m" 404 -
+2025-03-16 23:15:18,183 INFO 127.0.0.1 - - [16/Mar/2025 23:15:18] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 23:15:19,333 INFO 127.0.0.1 - - [16/Mar/2025 23:15:19] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-16 23:15:19,358 INFO 127.0.0.1 - - [16/Mar/2025 23:15:19] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 23:15:19,359 INFO 127.0.0.1 - - [16/Mar/2025 23:15:19] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-16 23:15:19,433 INFO 127.0.0.1 - - [16/Mar/2025 23:15:19] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 23:15:31,425 INFO 127.0.0.1 - - [16/Mar/2025 23:15:31] "POST /process HTTP/1.1" 200 -
+2025-03-16 23:15:32,631 INFO 127.0.0.1 - - [16/Mar/2025 23:15:32] "GET /download/066e217c-20bd-4dbc-87e1-aa0ca10ec129?format=docx HTTP/1.1" 200 -
+2025-03-16 23:15:32,651 INFO 127.0.0.1 - - [16/Mar/2025 23:15:32] "GET /download/066e217c-20bd-4dbc-87e1-aa0ca10ec129?format=docx HTTP/1.1" 200 -
+2025-03-16 23:15:32,661 INFO 127.0.0.1 - - [16/Mar/2025 23:15:32] "[35m[1mHEAD /download/066e217c-20bd-4dbc-87e1-aa0ca10ec129?format=docx HTTP/1.1[0m" 206 -
+2025-03-16 23:17:14,007 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/app.py', reloading
+2025-03-16 23:17:14,768 INFO  * Restarting with stat
+2025-03-16 23:17:17,741 WARNING  * Debugger is active!
+2025-03-16 23:17:17,763 INFO  * Debugger PIN: 113-587-870
+2025-03-16 23:17:23,285 INFO 127.0.0.1 - - [16/Mar/2025 23:17:23] "[36mGET /download/066e217c-20bd-4dbc-87e1-aa0ca10ec129?format=docx HTTP/1.1[0m" 304 -
+2025-03-16 23:17:23,297 INFO 127.0.0.1 - - [16/Mar/2025 23:17:23] "GET /download/066e217c-20bd-4dbc-87e1-aa0ca10ec129?format=docx HTTP/1.1" 200 -
+2025-03-16 23:17:23,308 INFO 127.0.0.1 - - [16/Mar/2025 23:17:23] "[35m[1mHEAD /download/066e217c-20bd-4dbc-87e1-aa0ca10ec129?format=docx HTTP/1.1[0m" 206 -
+2025-03-16 23:17:29,447 INFO 127.0.0.1 - - [16/Mar/2025 23:17:29] "POST /process HTTP/1.1" 200 -
+2025-03-16 23:27:01,966 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/app.py', reloading
+2025-03-16 23:27:02,525 INFO  * Restarting with stat
+2025-03-16 23:43:19,434 INFO  * Restarting with stat
+2025-03-16 23:57:28,855 INFO  * Restarting with stat
+2025-03-16 23:57:32,552 WARNING  * Debugger is active!
+2025-03-16 23:57:32,570 INFO  * Debugger PIN: 113-587-870
+2025-03-16 23:57:45,368 INFO 127.0.0.1 - - [16/Mar/2025 23:57:45] "GET /download/747eaaa6-0ce6-4a38-bef9-729b7fa0e478?format=docx HTTP/1.1" 200 -
+2025-03-16 23:57:45,394 INFO 127.0.0.1 - - [16/Mar/2025 23:57:45] "GET /download/747eaaa6-0ce6-4a38-bef9-729b7fa0e478?format=docx HTTP/1.1" 200 -
+2025-03-16 23:57:45,424 INFO 127.0.0.1 - - [16/Mar/2025 23:57:45] "[35m[1mHEAD /download/747eaaa6-0ce6-4a38-bef9-729b7fa0e478?format=docx HTTP/1.1[0m" 206 -
+2025-03-16 23:57:59,120 INFO 127.0.0.1 - - [16/Mar/2025 23:57:59] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-16 23:57:59,167 INFO 127.0.0.1 - - [16/Mar/2025 23:57:59] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-16 23:57:59,168 INFO 127.0.0.1 - - [16/Mar/2025 23:57:59] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-16 23:57:59,316 INFO 127.0.0.1 - - [16/Mar/2025 23:57:59] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-16 23:58:07,072 INFO 127.0.0.1 - - [16/Mar/2025 23:58:07] "POST /process HTTP/1.1" 200 -
+2025-03-16 23:58:26,316 INFO 127.0.0.1 - - [16/Mar/2025 23:58:26] "POST /process HTTP/1.1" 200 -
+2025-03-16 23:58:27,566 INFO 127.0.0.1 - - [16/Mar/2025 23:58:27] "GET /download/ba1070db-a98f-4ef1-a055-f589c4dbd60e?format=docx HTTP/1.1" 200 -
+2025-03-16 23:58:27,579 INFO 127.0.0.1 - - [16/Mar/2025 23:58:27] "GET /download/ba1070db-a98f-4ef1-a055-f589c4dbd60e?format=docx HTTP/1.1" 200 -
+2025-03-16 23:58:27,592 INFO 127.0.0.1 - - [16/Mar/2025 23:58:27] "[35m[1mHEAD /download/ba1070db-a98f-4ef1-a055-f589c4dbd60e?format=docx HTTP/1.1[0m" 206 -
+2025-03-16 23:58:31,304 INFO 127.0.0.1 - - [16/Mar/2025 23:58:31] "[36mGET /download/ba1070db-a98f-4ef1-a055-f589c4dbd60e?format=docx HTTP/1.1[0m" 304 -
+2025-03-16 23:58:31,332 INFO 127.0.0.1 - - [16/Mar/2025 23:58:31] "GET /download/ba1070db-a98f-4ef1-a055-f589c4dbd60e?format=docx HTTP/1.1" 200 -
+2025-03-16 23:58:31,351 INFO 127.0.0.1 - - [16/Mar/2025 23:58:31] "[35m[1mHEAD /download/ba1070db-a98f-4ef1-a055-f589c4dbd60e?format=docx HTTP/1.1[0m" 206 -
+2025-03-16 23:58:38,740 INFO 127.0.0.1 - - [16/Mar/2025 23:58:38] "POST /process HTTP/1.1" 200 -
+2025-03-17 00:12:23,636 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/app.py', reloading
+2025-03-17 00:12:24,876 INFO  * Restarting with stat
+2025-03-17 00:12:27,826 WARNING  * Debugger is active!
+2025-03-17 00:12:27,847 INFO  * Debugger PIN: 113-587-870
+2025-03-17 00:12:42,334 INFO 127.0.0.1 - - [17/Mar/2025 00:12:42] "GET /download/e2c8fc3c-46ae-41a5-94a7-bd5b33c96ebc?format=docx HTTP/1.1" 200 -
+2025-03-17 00:12:42,345 INFO 127.0.0.1 - - [17/Mar/2025 00:12:42] "GET /download/e2c8fc3c-46ae-41a5-94a7-bd5b33c96ebc?format=docx HTTP/1.1" 200 -
+2025-03-17 00:12:42,358 INFO 127.0.0.1 - - [17/Mar/2025 00:12:42] "[35m[1mHEAD /download/e2c8fc3c-46ae-41a5-94a7-bd5b33c96ebc?format=docx HTTP/1.1[0m" 206 -
+2025-03-17 00:14:51,281 INFO 127.0.0.1 - - [17/Mar/2025 00:14:51] "POST /process HTTP/1.1" 200 -
+2025-03-17 00:16:15,764 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/app.py', reloading
+2025-03-17 00:16:16,988 INFO  * Restarting with stat
+2025-03-17 00:16:19,769 WARNING  * Debugger is active!
+2025-03-17 00:16:19,791 INFO  * Debugger PIN: 113-587-870
+2025-03-17 00:16:28,852 INFO 127.0.0.1 - - [17/Mar/2025 00:16:28] "[36mGET /text-upload HTTP/1.1[0m" 304 -
+2025-03-17 00:16:28,889 INFO 127.0.0.1 - - [17/Mar/2025 00:16:28] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-17 00:16:28,889 INFO 127.0.0.1 - - [17/Mar/2025 00:16:28] "[36mGET /static/js/text-upload.js HTTP/1.1[0m" 304 -
+2025-03-17 00:16:29,053 INFO 127.0.0.1 - - [17/Mar/2025 00:16:29] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-17 00:17:04,144 INFO 127.0.0.1 - - [17/Mar/2025 00:17:04] "POST /process HTTP/1.1" 200 -
+2025-03-17 00:17:48,875 INFO 127.0.0.1 - - [17/Mar/2025 00:17:48] "POST /process HTTP/1.1" 200 -
+2025-03-17 22:10:36,316 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/app.py', reloading
+2025-03-17 22:10:37,706 INFO  * Restarting with stat
+2025-03-17 22:10:42,188 WARNING  * Debugger is active!
+2025-03-17 22:10:42,206 INFO  * Debugger PIN: 113-587-870
+2025-03-17 22:14:34,136 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/app.py', reloading
+2025-03-17 22:14:34,654 INFO  * Restarting with stat
+2025-03-17 22:14:37,758 WARNING  * Debugger is active!
+2025-03-17 22:14:37,781 INFO  * Debugger PIN: 113-587-870
+2025-03-17 22:21:24,837 INFO  * Detected change in '/Users/zyx/Documents/TestGen/backend/app.py', reloading
+2025-03-17 22:21:25,249 INFO  * Restarting with stat
+2025-03-17 22:21:28,684 WARNING  * Debugger is active!
+2025-03-17 22:21:28,710 INFO  * Debugger PIN: 113-587-870
