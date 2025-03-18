@@ -1844,3 +1844,50 @@
 2025-03-18 17:40:49,055 INFO 127.0.0.1 - - [18/Mar/2025 17:40:49] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
 2025-03-18 17:40:49,057 INFO 127.0.0.1 - - [18/Mar/2025 17:40:49] "[36mGET /static/js/audio-upload.js HTTP/1.1[0m" 304 -
 2025-03-18 17:40:49,123 INFO 127.0.0.1 - - [18/Mar/2025 17:40:49] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-18 17:44:58,790 INFO 127.0.0.1 - - [18/Mar/2025 17:44:58] "[36mGET /audio-upload HTTP/1.1[0m" 304 -
+2025-03-18 17:44:58,811 INFO 127.0.0.1 - - [18/Mar/2025 17:44:58] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 17:44:58,811 INFO 127.0.0.1 - - [18/Mar/2025 17:44:58] "GET /static/js/audio-upload.js HTTP/1.1" 200 -
+2025-03-18 17:44:58,914 INFO 127.0.0.1 - - [18/Mar/2025 17:44:58] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-18 17:46:54,252 INFO 127.0.0.1 - - [18/Mar/2025 17:46:54] "[36mGET /audio-upload HTTP/1.1[0m" 304 -
+2025-03-18 17:46:54,265 INFO 127.0.0.1 - - [18/Mar/2025 17:46:54] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 17:46:54,267 INFO 127.0.0.1 - - [18/Mar/2025 17:46:54] "GET /static/js/audio-upload.js HTTP/1.1" 200 -
+2025-03-18 17:46:54,329 INFO 127.0.0.1 - - [18/Mar/2025 17:46:54] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-18 17:49:18,530 INFO 127.0.0.1 - - [18/Mar/2025 17:49:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 17:52:16,695 INFO 127.0.0.1 - - [18/Mar/2025 17:52:16] "[36mGET / HTTP/1.1[0m" 304 -
+2025-03-18 17:52:16,724 INFO 127.0.0.1 - - [18/Mar/2025 17:52:16] "[33mGET /static/js/app.js HTTP/1.1[0m" 404 -
+2025-03-18 17:52:16,724 INFO 127.0.0.1 - - [18/Mar/2025 17:52:16] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 17:52:16,878 INFO 127.0.0.1 - - [18/Mar/2025 17:52:16] "[36mGET /static/resource/background.png HTTP/1.1[0m" 304 -
+2025-03-18 17:52:21,935 INFO 127.0.0.1 - - [18/Mar/2025 17:52:21] "[36mGET /audio-upload HTTP/1.1[0m" 304 -
+2025-03-18 17:52:21,961 INFO 127.0.0.1 - - [18/Mar/2025 17:52:21] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 17:52:21,963 INFO 127.0.0.1 - - [18/Mar/2025 17:52:21] "GET /static/js/audio-upload.js HTTP/1.1" 200 -
+2025-03-18 17:52:26,526 ERROR Audio processing failed: name 'KaldiRecognizer' is not defined
+2025-03-18 17:52:26,528 DEBUG close.started
+2025-03-18 17:52:26,528 DEBUG close.complete
+2025-03-18 17:52:26,528 DEBUG connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-03-18 17:52:26,528 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x14f495810>
+2025-03-18 17:52:26,528 DEBUG send_request_headers.started request=<Request [b'POST']>
+2025-03-18 17:52:26,528 DEBUG send_request_headers.complete
+2025-03-18 17:52:26,528 DEBUG send_request_body.started request=<Request [b'POST']>
+2025-03-18 17:52:26,528 DEBUG send_request_body.complete
+2025-03-18 17:52:26,529 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2025-03-18 17:52:27,494 ERROR Audio processing failed: name 'KaldiRecognizer' is not defined
+2025-03-18 17:52:27,494 DEBUG connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-03-18 17:52:27,495 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x14f496990>
+2025-03-18 17:52:27,495 DEBUG send_request_headers.started request=<Request [b'POST']>
+2025-03-18 17:52:27,495 DEBUG send_request_headers.complete
+2025-03-18 17:52:27,495 DEBUG send_request_body.started request=<Request [b'POST']>
+2025-03-18 17:52:27,495 DEBUG send_request_body.complete
+2025-03-18 17:52:27,495 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2025-03-18 17:52:40,552 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Tue, 18 Mar 2025 20:52:40 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-03-18 17:52:40,553 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-18 17:52:40,553 DEBUG receive_response_body.started request=<Request [b'POST']>
+2025-03-18 17:52:40,553 DEBUG receive_response_body.complete
+2025-03-18 17:52:40,553 DEBUG response_closed.started
+2025-03-18 17:52:40,553 DEBUG response_closed.complete
+2025-03-18 17:52:41,680 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Tue, 18 Mar 2025 20:52:41 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-03-18 17:52:41,680 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-18 17:52:41,680 DEBUG receive_response_body.started request=<Request [b'POST']>
+2025-03-18 17:52:41,680 DEBUG receive_response_body.complete
+2025-03-18 17:52:41,680 DEBUG response_closed.started
+2025-03-18 17:52:41,680 DEBUG response_closed.complete
+2025-03-18 17:52:54,963 INFO 127.0.0.1 - - [18/Mar/2025 17:52:54] "POST /process HTTP/1.1" 200 -
