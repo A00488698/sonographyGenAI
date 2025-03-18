@@ -1,41 +1,63 @@
 # Clinical Report Generation System
 
-## Overview
-The Clinical Report Generation System is a web application that allows users to upload clinical notes or audio files, and automatically generates structured clinical reports in both DOCX and PDF formats. The system utilizes OCR (Optical Character Recognition) for image files, speech recognition for audio files, and AI-powered text processing for generating structured reports.
+This is a web application for generating clinical reports from text or audio files. The system supports multiple file formats and uses AI to process and generate structured reports.
 
 ## Features
-- **Text Upload**: Upload clinical notes in various formats (TXT, PDF, DOCX, JPG, JPEG)
-- **Audio Upload**: Upload audio files (WAV, MP3) for speech-to-text conversion
-- **AI-Powered Report Generation**: Generate structured clinical reports using AI models
-- **Multiple Output Formats**: Download generated reports in both DOCX and PDF formats
-- **User-Friendly Interface**: Simple and intuitive web interface for easy file upload and report generation
 
-## Installation
+- **Text Upload**: Upload clinical notes in `.txt`, `.docx`, or `.pdf` format.
+- **Audio Upload**: Upload audio files in `.wav` or `.mp3` format for transcription and report generation.
+- **Report Generation**: Generate clinical reports in `.docx` or `.pdf` format.
+- **AI Integration**: Uses AI to process and structure the input data.
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.8 or higher
+- Pip (Python package manager)
+
+### Installation
+
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/clinical-report-generation-system.git
+   git clone https://github.com/your-repo/clinical-report-generation.git
+   cd clinical-report-generation
    ```
-2. Navigate to the project directory:
+
+2. Create a virtual environment:
    ```bash
-   cd clinical-report-generation-system
+   python -m venv venv
    ```
-3. Install the required dependencies:
+
+3. Activate the virtual environment:
+   - On Windows:
+     ```bash
+     venv\Scripts\activate
+     ```
+   - On macOS/Linux:
+     ```bash
+     source venv/bin/activate
+     ```
+
+4. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-4. Set up environment variables:
-   - Create a `.env` file in the root directory
-   - Add necessary environment variables (e.g., API keys, model paths)
 
-## Usage
-1. Start the Flask server:
+5. Set up environment variables:
+   - Create a `.env` file in the root directory.
+   - Add necessary environment variables (e.g., API keys, paths).
+
+### Running the Application
+
+1. Start the Flask development server:
    ```bash
-   python backend/app.py
+   python app2.py
    ```
-2. Open your web browser and navigate to `http://localhost:5000`
-3. Use the web interface to upload files and generate reports
 
-## Project Structure
+2. Open your browser and navigate to `http://localhost:5000`.
+
+### File Structure
 ```
 clinical-report-generation-system/
 ├── backend/               # Backend code and Flask application
@@ -67,12 +89,15 @@ clinical-report-generation-system/
 - wave
 
 ## Contributing
+
 Contributions are welcome! Please follow these steps:
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/YourFeatureName`)
-3. Commit your changes (`git commit -m 'Add some feature'`)
-4. Push to the branch (`git push origin feature/YourFeatureName`)
-5. Create a new Pull Request
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Open a pull request.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details. 

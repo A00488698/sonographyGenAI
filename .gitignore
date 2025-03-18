@@ -1,0 +1,26 @@
+# Ignore .env file
+.env
+
+# Ignore Python virtual environment
+venv/
+env/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore IDE specific files
+.vscode/
+.idea/
+
+# Ignore log files
+*.log
+
+# Ignore generated reports
+reports/
+uploads/
+
+# Ignore Vosk models
+model/

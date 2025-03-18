@@ -63,14 +63,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (response.ok) {
                 console.log("File processed successfully");
-                const blob = await response.blob();
-                const url = window.URL.createObjectURL(blob);
-                const a = document.createElement('a');
-                a.href = url;
-                a.download = 'clinical_report.docx';
-                document.body.appendChild(a);
-                a.click();
-                a.remove();
+                const data = await response.json();
+                const reportId = data.reportId;
+                
+                // 生成下载链接
+                const docxUrl = `/download/${reportId}?format=docx`;
+                const pdfUrl = `/download/${reportId}?format=pdf`;
+                
+                // 显示下载链接
+                resultDisplay.innerHTML = `
+                    <p>Report generated successfully!</p>
+                    <a href="${docxUrl}" download>Download DOCX</a>
+                    <a href="${pdfUrl}" download>Download PDF</a>
+                `;
             } else {
                 console.error("File processing failed:", response.statusText);
                 resultDisplay.innerText = 'File processing failed';
