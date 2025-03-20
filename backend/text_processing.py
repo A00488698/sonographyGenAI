@@ -10,8 +10,8 @@ import logging
 
 # Initialize Vosk speech recognition models globally
 vosk_models = {
-    'en': Model('model/vosk-model-small-en-us-0.15'),
-    'cn': Model('model/vosk-model-small-cn-0.22')
+    'en': Model('../model/vosk-model-small-en-us-0.15'),
+    'cn': Model('../model/vosk-model-small-cn-0.22')
 }
 
 def convert_audio(filepath):

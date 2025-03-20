@@ -6,6 +6,8 @@ from pathlib import Path
 import logging
 from flask_cors import CORS
 from dotenv import load_dotenv
+from vosk import Model, KaldiRecognizer
+import wave
 
 # Import the three modules
 from text_processing import process_image, process_audio, process_text, process_pdf, process_docx
@@ -160,4 +162,17 @@ if __name__ == '__main__':
     Path('reports').mkdir(exist_ok=True)
     
     # 3. Start Flask server, listen on 0.0.0.0:5000
-    app.run(host='0.0.0.0', port=5000, debug=True) 
+    app.run(host='0.0.0.0', port=5000, debug=True)
+
+# Load model
+model = Model('model/vosk-model-small-en-us-0.15')
+
+# Test recognition
+wf = wave.open('test.wav', 'rb')
+rec = KaldiRecognizer(model, wf.getframerate())
+while True:
+    data = wf.readframes(4000)
+    if len(data) == 0:
+        break
+    if rec.AcceptWaveform(data):
+        print(rec.Result()) 
