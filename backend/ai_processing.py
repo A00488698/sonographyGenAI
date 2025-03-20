@@ -8,6 +8,7 @@ def generate_report_with_ai(text):
     text: Text obtained from OCR or speech recognition
     """
     try:
+        print("Text passed to AI model:", text)  # 打印传递给模型的文本
         # Construct prompt, specifying required fields
         prompt = f"""Below is some content. Generate a structured report strictly in JSON format with exactly the following keys. If a field is not mentioned in the content, set its value to "UNKNOWN". Do not include any text or commentary outside of the JSON object.
 
