@@ -11,7 +11,7 @@ import wave
 
 # Import the three modules
 from text_processing import process_image, process_audio, process_text, process_pdf, process_docx
-from ai_processing import generate_report_with_ai
+from ai_processing import generate_report_with_ai, enhance_text_with_ai
 from report_generation import generate_report, download_report
 
 # -------------- 1. Get absolute path of project root directory --------------
@@ -101,7 +101,7 @@ def process_file():
         text = processors[ext](filepath)
         
         # 4. Call Llama2 AI to generate structured report data
-        structured_data = generate_report_with_ai(text)
+        structured_data = generate_report_with_ai(enhance_text_with_ai(text))
         print("Structured data from AI:", structured_data)
         if not structured_data:
             return jsonify({'error': 'AI report generation failed'}), 500
@@ -162,17 +162,4 @@ if __name__ == '__main__':
     Path('reports').mkdir(exist_ok=True)
     
     # 3. Start Flask server, listen on 0.0.0.0:5000
-    app.run(host='0.0.0.0', port=5000, debug=True)
-
-# Load model
-model = Model('model/vosk-model-small-en-us-0.15')
-
-# Test recognition
-wf = wave.open('test.wav', 'rb')
-rec = KaldiRecognizer(model, wf.getframerate())
-while True:
-    data = wf.readframes(4000)
-    if len(data) == 0:
-        break
-    if rec.AcceptWaveform(data):
-        print(rec.Result()) 
+    app.run(host='0.0.0.0', port=5000, debug=True) 

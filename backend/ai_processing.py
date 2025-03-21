@@ -1,6 +1,36 @@
 import json
 import logging
 import ollama
+def enhance_text_with_ai(text):
+    """
+    Use AI to enhance and refine the input text
+    text: Original text content
+    return: Enhanced text
+    """
+    try:
+        prompt = f"""Please enhance and refine the following medical report text. Requirements:
+1. Correct obvious grammar and spelling errors
+2. Fill in missing information that can be reasonably inferred
+3. Use more professional medical terminology
+4. Maintain objectivity and accuracy of medical reporting
+5. Preserve the authenticity of original information, avoid over-interpretation
+
+Original text:
+{text}
+
+Please return only the enhanced text without any explanations or additional content.
+"""
+        # Call AI model for text enhancement
+        response = ollama.generate(model='gemma3', prompt=prompt)
+        enhanced_text = response['response']
+        
+        print("Enhanced text:", enhanced_text)  # Debug log
+        return enhanced_text.strip()
+        
+    except Exception as e:
+        logging.error(f"Text enhancement failed: {str(e)}")
+        return text  # Return original text if enhancement fails
+
 
 def generate_report_with_ai(text):
     """
@@ -78,7 +108,7 @@ Output only a valid JSON object.
             }
         
     except Exception as e:
-        logging.error(f"Llama2 report generation failed: {str(e)}")
+        logging.error(f"gemma3 report generation failed: {str(e)}")
         # If AI generation fails, return default structure
         return {
             'patient_name': 'unknown',
