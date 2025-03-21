@@ -51,7 +51,7 @@ Your Reliable Report Assistant is a web application for generating clinical repo
 
 5. Set up environment variables:
    - Create a `.env` file in the root directory.
-   - Add necessary environment variables (e.g., API keys, paths).
+   - Add necessary environment variables.
 
 6. Install Ollama and gemma3:
    - Follow the [Ollama installation guide](https://ollama.ai/docs) to set up gemma3 locally.
