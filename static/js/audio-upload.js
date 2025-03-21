@@ -157,9 +157,23 @@ document.addEventListener('DOMContentLoaded', () => {
             if (xhr.status === 200) {
                 const data = JSON.parse(xhr.responseText);
                 console.log("Server response:", data); // 打印服务器返回的数据
-                if (data.text) {
-                    console.log("Transcribed text:", data.text); // 打印解析后的文本
-                }
+
+                // 更新进度条和状态
+                progressFill.style.width = '100%';
+                progressText.textContent = '100%';
+                fileMeta.textContent = `${(file.size / 1024 / 1024).toFixed(2)} MB • just now`;
+                fileDone.textContent = 'Done';
+                fileDone.style.color = '#4caf50';
+
+                // 显示删除按钮（垃圾桶图标）
+                const deleteButton = document.createElement('button');
+                deleteButton.className = 'delete-btn';
+                deleteButton.innerHTML = '<i class="fas fa-trash"></i>'; // 使用 Font Awesome 图标
+                deleteButton.onclick = function () {
+                    fileItem.remove(); // 删除文件条目
+                };
+                fileItem.appendChild(deleteButton);
+
                 // 处理生成报告的逻辑
                 const reportId = data.reportId;
                 resultDisplay.innerHTML = `
@@ -169,6 +183,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 `;
             } else {
                 console.error("Upload failed:", xhr.statusText);
+                fileDone.textContent = 'Failed';
+                fileDone.style.color = '#f44336';
             }
         };
 

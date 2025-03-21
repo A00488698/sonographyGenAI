@@ -33,7 +33,7 @@ Output only a valid JSON object.
 """
         
         # Call Llama2 via Ollama
-        response = ollama.generate(model='llama2', prompt=prompt)
+        response = ollama.generate(model='gemma3', prompt=prompt)
         generated_text = response['response']
         
         # Debug: Print the generated text
