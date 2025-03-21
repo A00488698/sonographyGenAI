@@ -3,9 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const fileInput = document.getElementById('textFileInput');
     const fileNameDisplay = document.getElementById('file-name');
     const textUploadForm = document.getElementById('textUploadForm');
-    const progressContainer = document.getElementById('progressContainer');
-    const progressBar = document.getElementById('progressBar');
-    const progressText = document.getElementById('progressText');
 
     if (!textUploadForm) {
         console.error('textUploadForm element not found');
@@ -101,4 +98,4 @@ async function downloadReport(reportId, format) {
     } catch (error) {
         alert('Download failed: ' + error.message);
     }
-} 
+}

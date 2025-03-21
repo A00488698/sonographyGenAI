@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Upload Clinical Notes</title>
+    <title>Upload Report Notes</title>
     <!-- Reference global styles, path changed to /static/css/styles.css -->
     <link rel="stylesheet" href="/static/css/styles.css">
     <!-- Reference Font Awesome CDN for icons -->
@@ -12,12 +12,12 @@
     <!-- Navigation bar: Use Flask routes instead of .html file names -->
     <div class="navbar">
         <a href="/">Home</a>
-        <a href="/text-upload">Upload Clinical Notes</a>
-        <a href="/audio-upload">Upload Audio File</a>
+        <a href="/text-upload">Upload Report Notes</a>
+        <a href="/audio-upload">Upload Report Audio</a>
     </div>
 
     <div class="container">
-        <h1>Upload Clinical Notes</h1>
+        <h1>Upload Report Notes</h1>
         <form id="textUploadForm">
             <div class="drop-zone">
                 <div class="drop-zone-content">
@@ -31,9 +31,6 @@
             <button type="submit" class="submit-btn">Upload and Generate Report</button>
         </form>
 
-        <div id="progressContainer">
-            <div id="progressBar"></div>
-        </div>
         <p id="status"></p>
         <div id="download-links"></div>
     </div>
